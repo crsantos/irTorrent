@@ -118,17 +118,12 @@
 		8D3DAF3714DE254C0005D3D5 /* irTorrent */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF6F14DE25B20005D3D5 /* iPad */,
 				8D3DAF6E14DE258C0005D3D5 /* Controllers */,
 				8D3DAF6D14DE25840005D3D5 /* Views */,
 				8D3DAF6C14DE25690005D3D5 /* Models */,
 				8D3DAF6B14DE25610005D3D5 /* Vendor */,
 				8D3DAF4014DE254C0005D3D5 /* irTorrentAppDelegate.h */,
 				8D3DAF4114DE254C0005D3D5 /* irTorrentAppDelegate.m */,
-				8D3DAF4314DE254C0005D3D5 /* MainWindow.xib */,
-				8D3DAF4614DE254C0005D3D5 /* RootViewController.h */,
-				8D3DAF4714DE254C0005D3D5 /* RootViewController.m */,
-				8D3DAF4914DE254D0005D3D5 /* RootViewController.xib */,
 				8D3DAF3814DE254C0005D3D5 /* Supporting Files */,
 			);
 			path = irTorrent;
@@ -181,6 +176,9 @@
 		8D3DAF6D14DE25840005D3D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D3DAF4914DE254D0005D3D5 /* RootViewController.xib */,
+				8D3DAF7314DE2A580005D3D5 /* iPhone */,
+				8D3DAF6F14DE25B20005D3D5 /* iPad */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -188,6 +186,8 @@
 		8D3DAF6E14DE258C0005D3D5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D3DAF4614DE254C0005D3D5 /* RootViewController.h */,
+				8D3DAF4714DE254C0005D3D5 /* RootViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -198,6 +198,14 @@
 				8D3DAF7014DE25B60005D3D5 /* MainWindow-iPad.xib */,
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		8D3DAF7314DE2A580005D3D5 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				8D3DAF4314DE254C0005D3D5 /* MainWindow.xib */,
+			);
+			name = iPhone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
