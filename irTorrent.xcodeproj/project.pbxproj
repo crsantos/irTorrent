@@ -7,245 +7,282 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D3DAF3214DE254C0005D3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DAF3114DE254C0005D3D5 /* UIKit.framework */; };
-		8D3DAF3414DE254C0005D3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DAF3314DE254C0005D3D5 /* Foundation.framework */; };
-		8D3DAF3614DE254C0005D3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DAF3514DE254C0005D3D5 /* CoreGraphics.framework */; };
-		8D3DAF3C14DE254C0005D3D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF3A14DE254C0005D3D5 /* InfoPlist.strings */; };
-		8D3DAF3E14DE254C0005D3D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DAF3D14DE254C0005D3D5 /* main.m */; };
-		8D3DAF4214DE254C0005D3D5 /* irTorrentAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DAF4114DE254C0005D3D5 /* irTorrentAppDelegate.m */; };
-		8D3DAF4514DE254C0005D3D5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF4314DE254C0005D3D5 /* MainWindow.xib */; };
-		8D3DAF4814DE254C0005D3D5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DAF4714DE254C0005D3D5 /* RootViewController.m */; };
-		8D3DAF4B14DE254D0005D3D5 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF4914DE254D0005D3D5 /* RootViewController.xib */; };
-		8D3DAF5314DE254D0005D3D5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DAF5214DE254D0005D3D5 /* SenTestingKit.framework */; };
-		8D3DAF5414DE254D0005D3D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DAF3114DE254C0005D3D5 /* UIKit.framework */; };
-		8D3DAF5514DE254D0005D3D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DAF3314DE254C0005D3D5 /* Foundation.framework */; };
-		8D3DAF5614DE254D0005D3D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DAF3514DE254C0005D3D5 /* CoreGraphics.framework */; };
-		8D3DAF5E14DE254D0005D3D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF5C14DE254D0005D3D5 /* InfoPlist.strings */; };
-		8D3DAF6014DE254E0005D3D5 /* irTorrentTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF5F14DE254E0005D3D5 /* irTorrentTests.h */; };
-		8D3DAF6214DE254E0005D3D5 /* irTorrentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DAF6114DE254E0005D3D5 /* irTorrentTests.m */; };
-		8D3DAF7214DE25B60005D3D5 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF7014DE25B60005D3D5 /* MainWindow-iPad.xib */; };
-		8D3DAF7814DE2D820005D3D5 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DAF7714DE2D820005D3D5 /* Torrent.m */; };
-		8DAABC3614DE3303001C7A65 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAABC3514DE3303001C7A65 /* User.m */; };
-		8DAABC3A14DE331F001C7A65 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAABC3914DE331F001C7A65 /* Tracker.m */; };
-		8DAABC3D14DE3742001C7A65 /* RTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAABC3C14DE3742001C7A65 /* RTorrent.m */; };
+		8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1514DEC35000E11F34 /* UIKit.framework */; };
+		8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1714DEC35000E11F34 /* Foundation.framework */; };
+		8DE94E1A14DEC35000E11F34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1914DEC35000E11F34 /* CoreGraphics.framework */; };
+		8DE94E2014DEC35000E11F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94E1E14DEC35000E11F34 /* InfoPlist.strings */; };
+		8DE94E2214DEC35000E11F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E2114DEC35000E11F34 /* main.m */; };
+		8DE94E2614DEC35000E11F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E2514DEC35000E11F34 /* AppDelegate.m */; };
+		8DE94E2914DEC35000E11F34 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94E2714DEC35000E11F34 /* MainStoryboard_iPhone.storyboard */; };
+		8DE94E2C14DEC35000E11F34 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94E2A14DEC35000E11F34 /* MainStoryboard_iPad.storyboard */; };
+		8DE94E2F14DEC35000E11F34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E2E14DEC35000E11F34 /* ViewController.m */; };
+		8DE94E3714DEC35000E11F34 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E3614DEC35000E11F34 /* SenTestingKit.framework */; };
+		8DE94E3814DEC35000E11F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1514DEC35000E11F34 /* UIKit.framework */; };
+		8DE94E3914DEC35000E11F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1714DEC35000E11F34 /* Foundation.framework */; };
+		8DE94E4114DEC35000E11F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94E3F14DEC35000E11F34 /* InfoPlist.strings */; };
+		8DE94E4414DEC35000E11F34 /* irTorrentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E4314DEC35000E11F34 /* irTorrentTests.m */; };
+		8DE94E5914DEC3F100E11F34 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5614DEC3F100E11F34 /* TBXML.m */; };
+		8DE94E5A14DEC3F100E11F34 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5714DEC3F100E11F34 /* TBXML+Compression.m */; };
+		8DE94E5B14DEC3F100E11F34 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5814DEC3F100E11F34 /* TBXML+HTTP.m */; };
+		8DE94E7114DEC40200E11F34 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5D14DEC40200E11F34 /* NSDataAdditions.m */; };
+		8DE94E7214DEC40200E11F34 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5F14DEC40200E11F34 /* NSStringAdditions.m */; };
+		8DE94E7314DEC40200E11F34 /* XMLRPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6314DEC40200E11F34 /* XMLRPCConnection.m */; };
+		8DE94E7414DEC40200E11F34 /* XMLRPCConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6614DEC40200E11F34 /* XMLRPCConnectionManager.m */; };
+		8DE94E7514DEC40200E11F34 /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6814DEC40200E11F34 /* XMLRPCEncoder.m */; };
+		8DE94E7614DEC40200E11F34 /* XMLRPCEventBasedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6A14DEC40200E11F34 /* XMLRPCEventBasedParser.m */; };
+		8DE94E7714DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6C14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m */; };
+		8DE94E7814DEC40200E11F34 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6E14DEC40200E11F34 /* XMLRPCRequest.m */; };
+		8DE94E7914DEC40200E11F34 /* XMLRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */; };
+		8DE94E7B14DEC44000E11F34 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E7A14DEC44000E11F34 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8D3DAF5714DE254D0005D3D5 /* PBXContainerItemProxy */ = {
+		8DE94E3A14DEC35000E11F34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8D3DAF2414DE254B0005D3D5 /* Project object */;
+			containerPortal = 8DE94E0814DEC35000E11F34 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D3DAF2C14DE254C0005D3D5;
+			remoteGlobalIDString = 8DE94E1014DEC35000E11F34;
 			remoteInfo = irTorrent;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D3DAF2D14DE254C0005D3D5 /* irTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = irTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D3DAF3114DE254C0005D3D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8D3DAF3314DE254C0005D3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8D3DAF3514DE254C0005D3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8D3DAF3914DE254C0005D3D5 /* irTorrent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "irTorrent-Info.plist"; sourceTree = "<group>"; };
-		8D3DAF3B14DE254C0005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8D3DAF3D14DE254C0005D3D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8D3DAF3F14DE254C0005D3D5 /* irTorrent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "irTorrent-Prefix.pch"; sourceTree = "<group>"; };
-		8D3DAF4014DE254C0005D3D5 /* irTorrentAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irTorrentAppDelegate.h; sourceTree = "<group>"; };
-		8D3DAF4114DE254C0005D3D5 /* irTorrentAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = irTorrentAppDelegate.m; sourceTree = "<group>"; };
-		8D3DAF4414DE254C0005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		8D3DAF4614DE254C0005D3D5 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		8D3DAF4714DE254C0005D3D5 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		8D3DAF4A14DE254D0005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		8D3DAF5114DE254D0005D3D5 /* irTorrentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = irTorrentTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D3DAF5214DE254D0005D3D5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		8D3DAF5B14DE254D0005D3D5 /* irTorrentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "irTorrentTests-Info.plist"; sourceTree = "<group>"; };
-		8D3DAF5D14DE254D0005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8D3DAF5F14DE254E0005D3D5 /* irTorrentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irTorrentTests.h; sourceTree = "<group>"; };
-		8D3DAF6114DE254E0005D3D5 /* irTorrentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = irTorrentTests.m; sourceTree = "<group>"; };
-		8D3DAF7114DE25B60005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		8D3DAF7614DE2D820005D3D5 /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Torrent.h; path = Classes/Torrent.h; sourceTree = "<group>"; };
-		8D3DAF7714DE2D820005D3D5 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Torrent.m; path = Classes/Torrent.m; sourceTree = "<group>"; };
-		8DAABC3414DE3303001C7A65 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Classes/User.h; sourceTree = "<group>"; };
-		8DAABC3514DE3303001C7A65 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Classes/User.m; sourceTree = "<group>"; };
-		8DAABC3814DE331F001C7A65 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracker.h; path = Classes/Tracker.h; sourceTree = "<group>"; };
-		8DAABC3914DE331F001C7A65 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tracker.m; path = Classes/Tracker.m; sourceTree = "<group>"; };
-		8DAABC3B14DE3742001C7A65 /* RTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTorrent.h; path = Classes/RTorrent.h; sourceTree = "<group>"; };
-		8DAABC3C14DE3742001C7A65 /* RTorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTorrent.m; path = Classes/RTorrent.m; sourceTree = "<group>"; };
+		8DE94E1114DEC35000E11F34 /* irTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = irTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE94E1514DEC35000E11F34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8DE94E1714DEC35000E11F34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8DE94E1914DEC35000E11F34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8DE94E1D14DEC35000E11F34 /* irTorrent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "irTorrent-Info.plist"; sourceTree = "<group>"; };
+		8DE94E1F14DEC35000E11F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DE94E2114DEC35000E11F34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8DE94E2314DEC35000E11F34 /* irTorrent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "irTorrent-Prefix.pch"; sourceTree = "<group>"; };
+		8DE94E2414DEC35000E11F34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8DE94E2514DEC35000E11F34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8DE94E2814DEC35000E11F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		8DE94E2B14DEC35000E11F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		8DE94E2D14DEC35000E11F34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8DE94E2E14DEC35000E11F34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8DE94E3514DEC35000E11F34 /* irTorrentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = irTorrentTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE94E3614DEC35000E11F34 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8DE94E3E14DEC35000E11F34 /* irTorrentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "irTorrentTests-Info.plist"; sourceTree = "<group>"; };
+		8DE94E4014DEC35000E11F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DE94E4214DEC35000E11F34 /* irTorrentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irTorrentTests.h; sourceTree = "<group>"; };
+		8DE94E4314DEC35000E11F34 /* irTorrentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = irTorrentTests.m; sourceTree = "<group>"; };
+		8DE94E5314DEC3EA00E11F34 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBXML.h; path = "Vendor/TBXML/TBXML-Headers/TBXML.h"; sourceTree = "<group>"; };
+		8DE94E5414DEC3EA00E11F34 /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TBXML+Compression.h"; path = "Vendor/TBXML/TBXML-Headers/TBXML+Compression.h"; sourceTree = "<group>"; };
+		8DE94E5514DEC3EA00E11F34 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TBXML+HTTP.h"; path = "Vendor/TBXML/TBXML-Headers/TBXML+HTTP.h"; sourceTree = "<group>"; };
+		8DE94E5614DEC3F100E11F34 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBXML.m; path = "Vendor/TBXML/TBXML-Code/TBXML.m"; sourceTree = "<group>"; };
+		8DE94E5714DEC3F100E11F34 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+Compression.m"; path = "Vendor/TBXML/TBXML-Code/TBXML+Compression.m"; sourceTree = "<group>"; };
+		8DE94E5814DEC3F100E11F34 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+HTTP.m"; path = "Vendor/TBXML/TBXML-Code/TBXML+HTTP.m"; sourceTree = "<group>"; };
+		8DE94E5C14DEC40200E11F34 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataAdditions.h; path = Vendor/xmlrpc/NSDataAdditions.h; sourceTree = "<group>"; };
+		8DE94E5D14DEC40200E11F34 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataAdditions.m; path = Vendor/xmlrpc/NSDataAdditions.m; sourceTree = "<group>"; };
+		8DE94E5E14DEC40200E11F34 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSStringAdditions.h; path = Vendor/xmlrpc/NSStringAdditions.h; sourceTree = "<group>"; };
+		8DE94E5F14DEC40200E11F34 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringAdditions.m; path = Vendor/xmlrpc/NSStringAdditions.m; sourceTree = "<group>"; };
+		8DE94E6014DEC40200E11F34 /* XMLRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPC.h; path = Vendor/xmlrpc/XMLRPC.h; sourceTree = "<group>"; };
+		8DE94E6114DEC40200E11F34 /* XMLRPC.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPC.pch; path = Vendor/xmlrpc/XMLRPC.pch; sourceTree = "<group>"; };
+		8DE94E6214DEC40200E11F34 /* XMLRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCConnection.h; path = Vendor/xmlrpc/XMLRPCConnection.h; sourceTree = "<group>"; };
+		8DE94E6314DEC40200E11F34 /* XMLRPCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCConnection.m; path = Vendor/xmlrpc/XMLRPCConnection.m; sourceTree = "<group>"; };
+		8DE94E6414DEC40200E11F34 /* XMLRPCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCConnectionDelegate.h; path = Vendor/xmlrpc/XMLRPCConnectionDelegate.h; sourceTree = "<group>"; };
+		8DE94E6514DEC40200E11F34 /* XMLRPCConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCConnectionManager.h; path = Vendor/xmlrpc/XMLRPCConnectionManager.h; sourceTree = "<group>"; };
+		8DE94E6614DEC40200E11F34 /* XMLRPCConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCConnectionManager.m; path = Vendor/xmlrpc/XMLRPCConnectionManager.m; sourceTree = "<group>"; };
+		8DE94E6714DEC40200E11F34 /* XMLRPCEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCEncoder.h; path = Vendor/xmlrpc/XMLRPCEncoder.h; sourceTree = "<group>"; };
+		8DE94E6814DEC40200E11F34 /* XMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCEncoder.m; path = Vendor/xmlrpc/XMLRPCEncoder.m; sourceTree = "<group>"; };
+		8DE94E6914DEC40200E11F34 /* XMLRPCEventBasedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCEventBasedParser.h; path = Vendor/xmlrpc/XMLRPCEventBasedParser.h; sourceTree = "<group>"; };
+		8DE94E6A14DEC40200E11F34 /* XMLRPCEventBasedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCEventBasedParser.m; path = Vendor/xmlrpc/XMLRPCEventBasedParser.m; sourceTree = "<group>"; };
+		8DE94E6B14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCEventBasedParserDelegate.h; path = Vendor/xmlrpc/XMLRPCEventBasedParserDelegate.h; sourceTree = "<group>"; };
+		8DE94E6C14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCEventBasedParserDelegate.m; path = Vendor/xmlrpc/XMLRPCEventBasedParserDelegate.m; sourceTree = "<group>"; };
+		8DE94E6D14DEC40200E11F34 /* XMLRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCRequest.h; path = Vendor/xmlrpc/XMLRPCRequest.h; sourceTree = "<group>"; };
+		8DE94E6E14DEC40200E11F34 /* XMLRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCRequest.m; path = Vendor/xmlrpc/XMLRPCRequest.m; sourceTree = "<group>"; };
+		8DE94E6F14DEC40200E11F34 /* XMLRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCResponse.h; path = Vendor/xmlrpc/XMLRPCResponse.h; sourceTree = "<group>"; };
+		8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCResponse.m; path = Vendor/xmlrpc/XMLRPCResponse.m; sourceTree = "<group>"; };
+		8DE94E7A14DEC44000E11F34 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D3DAF2A14DE254C0005D3D5 /* Frameworks */ = {
+		8DE94E0E14DEC35000E11F34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3DAF3214DE254C0005D3D5 /* UIKit.framework in Frameworks */,
-				8D3DAF3414DE254C0005D3D5 /* Foundation.framework in Frameworks */,
-				8D3DAF3614DE254C0005D3D5 /* CoreGraphics.framework in Frameworks */,
+				8DE94E7B14DEC44000E11F34 /* libz.dylib in Frameworks */,
+				8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */,
+				8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */,
+				8DE94E1A14DEC35000E11F34 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D3DAF4D14DE254D0005D3D5 /* Frameworks */ = {
+		8DE94E3114DEC35000E11F34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3DAF5314DE254D0005D3D5 /* SenTestingKit.framework in Frameworks */,
-				8D3DAF5414DE254D0005D3D5 /* UIKit.framework in Frameworks */,
-				8D3DAF5514DE254D0005D3D5 /* Foundation.framework in Frameworks */,
-				8D3DAF5614DE254D0005D3D5 /* CoreGraphics.framework in Frameworks */,
+				8DE94E3714DEC35000E11F34 /* SenTestingKit.framework in Frameworks */,
+				8DE94E3814DEC35000E11F34 /* UIKit.framework in Frameworks */,
+				8DE94E3914DEC35000E11F34 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D3DAF2214DE254B0005D3D5 = {
+		8DE94E0614DEC35000E11F34 = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF3714DE254C0005D3D5 /* irTorrent */,
-				8D3DAF5914DE254D0005D3D5 /* irTorrentTests */,
-				8D3DAF3014DE254C0005D3D5 /* Frameworks */,
-				8D3DAF2E14DE254C0005D3D5 /* Products */,
+				8DE94E7A14DEC44000E11F34 /* libz.dylib */,
+				8DE94E1B14DEC35000E11F34 /* irTorrent */,
+				8DE94E3C14DEC35000E11F34 /* irTorrentTests */,
+				8DE94E1414DEC35000E11F34 /* Frameworks */,
+				8DE94E1214DEC35000E11F34 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8D3DAF2E14DE254C0005D3D5 /* Products */ = {
+		8DE94E1214DEC35000E11F34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF2D14DE254C0005D3D5 /* irTorrent.app */,
-				8D3DAF5114DE254D0005D3D5 /* irTorrentTests.octest */,
+				8DE94E1114DEC35000E11F34 /* irTorrent.app */,
+				8DE94E3514DEC35000E11F34 /* irTorrentTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D3DAF3014DE254C0005D3D5 /* Frameworks */ = {
+		8DE94E1414DEC35000E11F34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF3114DE254C0005D3D5 /* UIKit.framework */,
-				8D3DAF3314DE254C0005D3D5 /* Foundation.framework */,
-				8D3DAF3514DE254C0005D3D5 /* CoreGraphics.framework */,
-				8D3DAF5214DE254D0005D3D5 /* SenTestingKit.framework */,
+				8DE94E1514DEC35000E11F34 /* UIKit.framework */,
+				8DE94E1714DEC35000E11F34 /* Foundation.framework */,
+				8DE94E1914DEC35000E11F34 /* CoreGraphics.framework */,
+				8DE94E3614DEC35000E11F34 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8D3DAF3714DE254C0005D3D5 /* irTorrent */ = {
+		8DE94E1B14DEC35000E11F34 /* irTorrent */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF6E14DE258C0005D3D5 /* Controllers */,
-				8D3DAF6D14DE25840005D3D5 /* Views */,
-				8D3DAF6C14DE25690005D3D5 /* Models */,
-				8D3DAF6B14DE25610005D3D5 /* Vendor */,
-				8D3DAF4014DE254C0005D3D5 /* irTorrentAppDelegate.h */,
-				8D3DAF4114DE254C0005D3D5 /* irTorrentAppDelegate.m */,
-				8D3DAF3814DE254C0005D3D5 /* Supporting Files */,
+				8DE94E5014DEC37500E11F34 /* Vendor */,
+				8DE94E4F14DEC36700E11F34 /* Models */,
+				8DE94E4E14DEC36400E11F34 /* Views */,
+				8DE94E4D14DEC35A00E11F34 /* Controllers */,
+				8DE94E2414DEC35000E11F34 /* AppDelegate.h */,
+				8DE94E2514DEC35000E11F34 /* AppDelegate.m */,
+				8DE94E1C14DEC35000E11F34 /* Supporting Files */,
 			);
 			path = irTorrent;
 			sourceTree = "<group>";
 		};
-		8D3DAF3814DE254C0005D3D5 /* Supporting Files */ = {
+		8DE94E1C14DEC35000E11F34 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF3914DE254C0005D3D5 /* irTorrent-Info.plist */,
-				8D3DAF3A14DE254C0005D3D5 /* InfoPlist.strings */,
-				8D3DAF3D14DE254C0005D3D5 /* main.m */,
-				8D3DAF3F14DE254C0005D3D5 /* irTorrent-Prefix.pch */,
+				8DE94E1D14DEC35000E11F34 /* irTorrent-Info.plist */,
+				8DE94E1E14DEC35000E11F34 /* InfoPlist.strings */,
+				8DE94E2114DEC35000E11F34 /* main.m */,
+				8DE94E2314DEC35000E11F34 /* irTorrent-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8D3DAF5914DE254D0005D3D5 /* irTorrentTests */ = {
+		8DE94E3C14DEC35000E11F34 /* irTorrentTests */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF5F14DE254E0005D3D5 /* irTorrentTests.h */,
-				8D3DAF6114DE254E0005D3D5 /* irTorrentTests.m */,
-				8D3DAF5A14DE254D0005D3D5 /* Supporting Files */,
+				8DE94E4214DEC35000E11F34 /* irTorrentTests.h */,
+				8DE94E4314DEC35000E11F34 /* irTorrentTests.m */,
+				8DE94E3D14DEC35000E11F34 /* Supporting Files */,
 			);
 			path = irTorrentTests;
 			sourceTree = "<group>";
 		};
-		8D3DAF5A14DE254D0005D3D5 /* Supporting Files */ = {
+		8DE94E3D14DEC35000E11F34 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF5B14DE254D0005D3D5 /* irTorrentTests-Info.plist */,
-				8D3DAF5C14DE254D0005D3D5 /* InfoPlist.strings */,
+				8DE94E3E14DEC35000E11F34 /* irTorrentTests-Info.plist */,
+				8DE94E3F14DEC35000E11F34 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8D3DAF6B14DE25610005D3D5 /* Vendor */ = {
+		8DE94E4D14DEC35A00E11F34 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Vendor;
-			sourceTree = "<group>";
-		};
-		8D3DAF6C14DE25690005D3D5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8D3DAF7614DE2D820005D3D5 /* Torrent.h */,
-				8D3DAF7714DE2D820005D3D5 /* Torrent.m */,
-				8DAABC3814DE331F001C7A65 /* Tracker.h */,
-				8DAABC3914DE331F001C7A65 /* Tracker.m */,
-				8DAABC3414DE3303001C7A65 /* User.h */,
-				8DAABC3514DE3303001C7A65 /* User.m */,
-				8DAABC3B14DE3742001C7A65 /* RTorrent.h */,
-				8DAABC3C14DE3742001C7A65 /* RTorrent.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		8D3DAF6D14DE25840005D3D5 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				8D3DAF4914DE254D0005D3D5 /* RootViewController.xib */,
-				8D3DAF7314DE2A580005D3D5 /* iPhone */,
-				8D3DAF6F14DE25B20005D3D5 /* iPad */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		8D3DAF6E14DE258C0005D3D5 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				8D3DAF7414DE2CD00005D3D5 /* Headers */,
-				8D3DAF4614DE254C0005D3D5 /* RootViewController.h */,
-				8D3DAF4714DE254C0005D3D5 /* RootViewController.m */,
+				8DE94E2D14DEC35000E11F34 /* ViewController.h */,
+				8DE94E2E14DEC35000E11F34 /* ViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		8D3DAF6F14DE25B20005D3D5 /* iPad */ = {
+		8DE94E4E14DEC36400E11F34 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF7014DE25B60005D3D5 /* MainWindow-iPad.xib */,
+				8DE94E2714DEC35000E11F34 /* MainStoryboard_iPhone.storyboard */,
+				8DE94E2A14DEC35000E11F34 /* MainStoryboard_iPad.storyboard */,
 			);
-			name = iPad;
+			name = Views;
 			sourceTree = "<group>";
 		};
-		8D3DAF7314DE2A580005D3D5 /* iPhone */ = {
+		8DE94E4F14DEC36700E11F34 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DAF4314DE254C0005D3D5 /* MainWindow.xib */,
 			);
-			name = iPhone;
+			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
-		8D3DAF7414DE2CD00005D3D5 /* Headers */ = {
+		8DE94E5014DEC37500E11F34 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8DE94E5214DEC3DF00E11F34 /* xmlrpc */,
+				8DE94E5114DEC3DA00E11F34 /* TBXML */,
 			);
-			name = Headers;
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		8DE94E5114DEC3DA00E11F34 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E5314DEC3EA00E11F34 /* TBXML.h */,
+				8DE94E5414DEC3EA00E11F34 /* TBXML+Compression.h */,
+				8DE94E5514DEC3EA00E11F34 /* TBXML+HTTP.h */,
+				8DE94E5614DEC3F100E11F34 /* TBXML.m */,
+				8DE94E5714DEC3F100E11F34 /* TBXML+Compression.m */,
+				8DE94E5814DEC3F100E11F34 /* TBXML+HTTP.m */,
+			);
+			name = TBXML;
+			sourceTree = "<group>";
+		};
+		8DE94E5214DEC3DF00E11F34 /* xmlrpc */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E5C14DEC40200E11F34 /* NSDataAdditions.h */,
+				8DE94E5D14DEC40200E11F34 /* NSDataAdditions.m */,
+				8DE94E5E14DEC40200E11F34 /* NSStringAdditions.h */,
+				8DE94E5F14DEC40200E11F34 /* NSStringAdditions.m */,
+				8DE94E6014DEC40200E11F34 /* XMLRPC.h */,
+				8DE94E6114DEC40200E11F34 /* XMLRPC.pch */,
+				8DE94E6214DEC40200E11F34 /* XMLRPCConnection.h */,
+				8DE94E6314DEC40200E11F34 /* XMLRPCConnection.m */,
+				8DE94E6414DEC40200E11F34 /* XMLRPCConnectionDelegate.h */,
+				8DE94E6514DEC40200E11F34 /* XMLRPCConnectionManager.h */,
+				8DE94E6614DEC40200E11F34 /* XMLRPCConnectionManager.m */,
+				8DE94E6714DEC40200E11F34 /* XMLRPCEncoder.h */,
+				8DE94E6814DEC40200E11F34 /* XMLRPCEncoder.m */,
+				8DE94E6914DEC40200E11F34 /* XMLRPCEventBasedParser.h */,
+				8DE94E6A14DEC40200E11F34 /* XMLRPCEventBasedParser.m */,
+				8DE94E6B14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.h */,
+				8DE94E6C14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m */,
+				8DE94E6D14DEC40200E11F34 /* XMLRPCRequest.h */,
+				8DE94E6E14DEC40200E11F34 /* XMLRPCRequest.m */,
+				8DE94E6F14DEC40200E11F34 /* XMLRPCResponse.h */,
+				8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */,
+			);
+			name = xmlrpc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D3DAF2C14DE254C0005D3D5 /* irTorrent */ = {
+		8DE94E1014DEC35000E11F34 /* irTorrent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D3DAF6514DE254E0005D3D5 /* Build configuration list for PBXNativeTarget "irTorrent" */;
+			buildConfigurationList = 8DE94E4714DEC35000E11F34 /* Build configuration list for PBXNativeTarget "irTorrent" */;
 			buildPhases = (
-				8D3DAF2914DE254C0005D3D5 /* Sources */,
-				8D3DAF2A14DE254C0005D3D5 /* Frameworks */,
-				8D3DAF2B14DE254C0005D3D5 /* Resources */,
+				8DE94E0D14DEC35000E11F34 /* Sources */,
+				8DE94E0E14DEC35000E11F34 /* Frameworks */,
+				8DE94E0F14DEC35000E11F34 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -253,79 +290,77 @@
 			);
 			name = irTorrent;
 			productName = irTorrent;
-			productReference = 8D3DAF2D14DE254C0005D3D5 /* irTorrent.app */;
+			productReference = 8DE94E1114DEC35000E11F34 /* irTorrent.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8D3DAF5014DE254D0005D3D5 /* irTorrentTests */ = {
+		8DE94E3414DEC35000E11F34 /* irTorrentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D3DAF6814DE254E0005D3D5 /* Build configuration list for PBXNativeTarget "irTorrentTests" */;
+			buildConfigurationList = 8DE94E4A14DEC35000E11F34 /* Build configuration list for PBXNativeTarget "irTorrentTests" */;
 			buildPhases = (
-				8D3DAF4C14DE254D0005D3D5 /* Sources */,
-				8D3DAF4D14DE254D0005D3D5 /* Frameworks */,
-				8D3DAF4E14DE254D0005D3D5 /* Resources */,
-				8D3DAF4F14DE254D0005D3D5 /* ShellScript */,
+				8DE94E3014DEC35000E11F34 /* Sources */,
+				8DE94E3114DEC35000E11F34 /* Frameworks */,
+				8DE94E3214DEC35000E11F34 /* Resources */,
+				8DE94E3314DEC35000E11F34 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8D3DAF5814DE254D0005D3D5 /* PBXTargetDependency */,
+				8DE94E3B14DEC35000E11F34 /* PBXTargetDependency */,
 			);
 			name = irTorrentTests;
 			productName = irTorrentTests;
-			productReference = 8D3DAF5114DE254D0005D3D5 /* irTorrentTests.octest */;
+			productReference = 8DE94E3514DEC35000E11F34 /* irTorrentTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8D3DAF2414DE254B0005D3D5 /* Project object */ = {
+		8DE94E0814DEC35000E11F34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = crsantos.info;
+				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 8D3DAF2714DE254B0005D3D5 /* Build configuration list for PBXProject "irTorrent" */;
+			buildConfigurationList = 8DE94E0B14DEC35000E11F34 /* Build configuration list for PBXProject "irTorrent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8D3DAF2214DE254B0005D3D5;
-			productRefGroup = 8D3DAF2E14DE254C0005D3D5 /* Products */;
+			mainGroup = 8DE94E0614DEC35000E11F34;
+			productRefGroup = 8DE94E1214DEC35000E11F34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D3DAF2C14DE254C0005D3D5 /* irTorrent */,
-				8D3DAF5014DE254D0005D3D5 /* irTorrentTests */,
+				8DE94E1014DEC35000E11F34 /* irTorrent */,
+				8DE94E3414DEC35000E11F34 /* irTorrentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D3DAF2B14DE254C0005D3D5 /* Resources */ = {
+		8DE94E0F14DEC35000E11F34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3DAF3C14DE254C0005D3D5 /* InfoPlist.strings in Resources */,
-				8D3DAF4514DE254C0005D3D5 /* MainWindow.xib in Resources */,
-				8D3DAF4B14DE254D0005D3D5 /* RootViewController.xib in Resources */,
-				8D3DAF7214DE25B60005D3D5 /* MainWindow-iPad.xib in Resources */,
+				8DE94E2014DEC35000E11F34 /* InfoPlist.strings in Resources */,
+				8DE94E2914DEC35000E11F34 /* MainStoryboard_iPhone.storyboard in Resources */,
+				8DE94E2C14DEC35000E11F34 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D3DAF4E14DE254D0005D3D5 /* Resources */ = {
+		8DE94E3214DEC35000E11F34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3DAF5E14DE254D0005D3D5 /* InfoPlist.strings in Resources */,
-				8D3DAF6014DE254E0005D3D5 /* irTorrentTests.h in Resources */,
+				8DE94E4114DEC35000E11F34 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8D3DAF4F14DE254D0005D3D5 /* ShellScript */ = {
+		8DE94E3314DEC35000E11F34 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,83 +376,83 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D3DAF2914DE254C0005D3D5 /* Sources */ = {
+		8DE94E0D14DEC35000E11F34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3DAF3E14DE254C0005D3D5 /* main.m in Sources */,
-				8D3DAF4214DE254C0005D3D5 /* irTorrentAppDelegate.m in Sources */,
-				8D3DAF4814DE254C0005D3D5 /* RootViewController.m in Sources */,
-				8D3DAF7814DE2D820005D3D5 /* Torrent.m in Sources */,
-				8DAABC3614DE3303001C7A65 /* User.m in Sources */,
-				8DAABC3A14DE331F001C7A65 /* Tracker.m in Sources */,
-				8DAABC3D14DE3742001C7A65 /* RTorrent.m in Sources */,
+				8DE94E2214DEC35000E11F34 /* main.m in Sources */,
+				8DE94E2614DEC35000E11F34 /* AppDelegate.m in Sources */,
+				8DE94E2F14DEC35000E11F34 /* ViewController.m in Sources */,
+				8DE94E5914DEC3F100E11F34 /* TBXML.m in Sources */,
+				8DE94E5A14DEC3F100E11F34 /* TBXML+Compression.m in Sources */,
+				8DE94E5B14DEC3F100E11F34 /* TBXML+HTTP.m in Sources */,
+				8DE94E7114DEC40200E11F34 /* NSDataAdditions.m in Sources */,
+				8DE94E7214DEC40200E11F34 /* NSStringAdditions.m in Sources */,
+				8DE94E7314DEC40200E11F34 /* XMLRPCConnection.m in Sources */,
+				8DE94E7414DEC40200E11F34 /* XMLRPCConnectionManager.m in Sources */,
+				8DE94E7514DEC40200E11F34 /* XMLRPCEncoder.m in Sources */,
+				8DE94E7614DEC40200E11F34 /* XMLRPCEventBasedParser.m in Sources */,
+				8DE94E7714DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m in Sources */,
+				8DE94E7814DEC40200E11F34 /* XMLRPCRequest.m in Sources */,
+				8DE94E7914DEC40200E11F34 /* XMLRPCResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D3DAF4C14DE254D0005D3D5 /* Sources */ = {
+		8DE94E3014DEC35000E11F34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3DAF6214DE254E0005D3D5 /* irTorrentTests.m in Sources */,
+				8DE94E4414DEC35000E11F34 /* irTorrentTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8D3DAF5814DE254D0005D3D5 /* PBXTargetDependency */ = {
+		8DE94E3B14DEC35000E11F34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8D3DAF2C14DE254C0005D3D5 /* irTorrent */;
-			targetProxy = 8D3DAF5714DE254D0005D3D5 /* PBXContainerItemProxy */;
+			target = 8DE94E1014DEC35000E11F34 /* irTorrent */;
+			targetProxy = 8DE94E3A14DEC35000E11F34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8D3DAF3A14DE254C0005D3D5 /* InfoPlist.strings */ = {
+		8DE94E1E14DEC35000E11F34 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8D3DAF3B14DE254C0005D3D5 /* en */,
+				8DE94E1F14DEC35000E11F34 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		8D3DAF4314DE254C0005D3D5 /* MainWindow.xib */ = {
+		8DE94E2714DEC35000E11F34 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8D3DAF4414DE254C0005D3D5 /* en */,
+				8DE94E2814DEC35000E11F34 /* en */,
 			);
-			name = MainWindow.xib;
+			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		8D3DAF4914DE254D0005D3D5 /* RootViewController.xib */ = {
+		8DE94E2A14DEC35000E11F34 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8D3DAF4A14DE254D0005D3D5 /* en */,
+				8DE94E2B14DEC35000E11F34 /* en */,
 			);
-			name = RootViewController.xib;
+			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		8D3DAF5C14DE254D0005D3D5 /* InfoPlist.strings */ = {
+		8DE94E3F14DEC35000E11F34 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8D3DAF5D14DE254D0005D3D5 /* en */,
+				8DE94E4014DEC35000E11F34 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8D3DAF7014DE25B60005D3D5 /* MainWindow-iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D3DAF7114DE25B60005D3D5 /* en */,
-			);
-			name = "MainWindow-iPad.xib";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8D3DAF6314DE254E0005D3D5 /* Debug */ = {
+		8DE94E4514DEC35000E11F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,16 +467,17 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8D3DAF6414DE254E0005D3D5 /* Release */ = {
+		8DE94E4614DEC35000E11F34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -449,44 +485,41 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		8D3DAF6614DE254E0005D3D5 /* Debug */ = {
+		8DE94E4814DEC35000E11F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "irTorrent/irTorrent-Prefix.pch";
 				INFOPLIST_FILE = "irTorrent/irTorrent-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		8D3DAF6714DE254E0005D3D5 /* Release */ = {
+		8DE94E4914DEC35000E11F34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "irTorrent/irTorrent-Prefix.pch";
 				INFOPLIST_FILE = "irTorrent/irTorrent-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		8D3DAF6914DE254E0005D3D5 /* Debug */ = {
+		8DE94E4B14DEC35000E11F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/irTorrent.app/irTorrent";
@@ -503,7 +536,7 @@
 			};
 			name = Debug;
 		};
-		8D3DAF6A14DE254E0005D3D5 /* Release */ = {
+		8DE94E4C14DEC35000E11F34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/irTorrent.app/irTorrent";
@@ -523,34 +556,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8D3DAF2714DE254B0005D3D5 /* Build configuration list for PBXProject "irTorrent" */ = {
+		8DE94E0B14DEC35000E11F34 /* Build configuration list for PBXProject "irTorrent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D3DAF6314DE254E0005D3D5 /* Debug */,
-				8D3DAF6414DE254E0005D3D5 /* Release */,
+				8DE94E4514DEC35000E11F34 /* Debug */,
+				8DE94E4614DEC35000E11F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D3DAF6514DE254E0005D3D5 /* Build configuration list for PBXNativeTarget "irTorrent" */ = {
+		8DE94E4714DEC35000E11F34 /* Build configuration list for PBXNativeTarget "irTorrent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D3DAF6614DE254E0005D3D5 /* Debug */,
-				8D3DAF6714DE254E0005D3D5 /* Release */,
+				8DE94E4814DEC35000E11F34 /* Debug */,
+				8DE94E4914DEC35000E11F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		8D3DAF6814DE254E0005D3D5 /* Build configuration list for PBXNativeTarget "irTorrentTests" */ = {
+		8DE94E4A14DEC35000E11F34 /* Build configuration list for PBXNativeTarget "irTorrentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D3DAF6914DE254E0005D3D5 /* Debug */,
-				8D3DAF6A14DE254E0005D3D5 /* Release */,
+				8DE94E4B14DEC35000E11F34 /* Debug */,
+				8DE94E4C14DEC35000E11F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8D3DAF2414DE254B0005D3D5 /* Project object */;
+	rootObject = 8DE94E0814DEC35000E11F34 /* Project object */;
 }

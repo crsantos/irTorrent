@@ -1,13 +1,13 @@
 //
-//  irTorrentTests.h
-//  irTorrentTests
+//  ViewController.h
+//  irTorrent
 //
 //  Created by Carlos Ricardo on 2/5/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <UIKit/UIKit.h>
 
-@interface irTorrentTests : SenTestCase
+@interface ViewController : UIViewController
 
 @end

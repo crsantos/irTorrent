@@ -36,6 +36,8 @@
  */
 - (NSMutableArray*) get_torrents{
     
+    // TODO
+    return nil;
 }
 
 @end

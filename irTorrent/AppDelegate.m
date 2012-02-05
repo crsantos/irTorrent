@@ -1,27 +1,29 @@
 //
-//  irTorrentAppDelegate.m
+//  AppDelegate.m
 //  irTorrent
 //
 //  Created by Carlos Ricardo on 2/5/12.
-//  Copyright 2012 crsantos.info. All rights reserved.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "irTorrentAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation irTorrentAppDelegate
+@implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize navigationController = _navigationController;
+
+- (void)dealloc
+{
+    [_window release];
+    [super dealloc];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    // Add the navigation controller's view to the window and display.
-    self.window.rootViewController = self.navigationController;
-    [self.window makeKeyAndVisible];
     return YES;
 }
-
+							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
@@ -59,13 +61,6 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
-}
-
-- (void)dealloc
-{
-    [_window release];
-    [_navigationController release];
-    [super dealloc];
 }
 
 @end
