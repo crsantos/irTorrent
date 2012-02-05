@@ -34,6 +34,10 @@
 		8DE94E7814DEC40200E11F34 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6E14DEC40200E11F34 /* XMLRPCRequest.m */; };
 		8DE94E7914DEC40200E11F34 /* XMLRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */; };
 		8DE94E7B14DEC44000E11F34 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E7A14DEC44000E11F34 /* libz.dylib */; };
+		8DE94E8414DEC48A00E11F34 /* RTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7D14DEC48A00E11F34 /* RTorrent.m */; };
+		8DE94E8514DEC48A00E11F34 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7F14DEC48A00E11F34 /* Torrent.m */; };
+		8DE94E8614DEC48A00E11F34 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E8114DEC48A00E11F34 /* Tracker.m */; };
+		8DE94E8714DEC48A00E11F34 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E8314DEC48A00E11F34 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,14 @@
 		8DE94E6F14DEC40200E11F34 /* XMLRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCResponse.h; path = Vendor/xmlrpc/XMLRPCResponse.h; sourceTree = "<group>"; };
 		8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCResponse.m; path = Vendor/xmlrpc/XMLRPCResponse.m; sourceTree = "<group>"; };
 		8DE94E7A14DEC44000E11F34 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8DE94E7C14DEC48A00E11F34 /* RTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTorrent.h; path = irTorrent/Classes/RTorrent.h; sourceTree = "<group>"; };
+		8DE94E7D14DEC48A00E11F34 /* RTorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTorrent.m; path = irTorrent/Classes/RTorrent.m; sourceTree = "<group>"; };
+		8DE94E7E14DEC48A00E11F34 /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Torrent.h; path = irTorrent/Classes/Torrent.h; sourceTree = "<group>"; };
+		8DE94E7F14DEC48A00E11F34 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Torrent.m; path = irTorrent/Classes/Torrent.m; sourceTree = "<group>"; };
+		8DE94E8014DEC48A00E11F34 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracker.h; path = irTorrent/Classes/Tracker.h; sourceTree = "<group>"; };
+		8DE94E8114DEC48A00E11F34 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tracker.m; path = irTorrent/Classes/Tracker.m; sourceTree = "<group>"; };
+		8DE94E8214DEC48A00E11F34 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = irTorrent/Classes/User.h; sourceTree = "<group>"; };
+		8DE94E8314DEC48A00E11F34 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = irTorrent/Classes/User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +230,14 @@
 		8DE94E4F14DEC36700E11F34 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8DE94E7C14DEC48A00E11F34 /* RTorrent.h */,
+				8DE94E7D14DEC48A00E11F34 /* RTorrent.m */,
+				8DE94E7E14DEC48A00E11F34 /* Torrent.h */,
+				8DE94E7F14DEC48A00E11F34 /* Torrent.m */,
+				8DE94E8014DEC48A00E11F34 /* Tracker.h */,
+				8DE94E8114DEC48A00E11F34 /* Tracker.m */,
+				8DE94E8214DEC48A00E11F34 /* User.h */,
+				8DE94E8314DEC48A00E11F34 /* User.m */,
 			);
 			name = Models;
 			path = ..;
@@ -395,6 +415,10 @@
 				8DE94E7714DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m in Sources */,
 				8DE94E7814DEC40200E11F34 /* XMLRPCRequest.m in Sources */,
 				8DE94E7914DEC40200E11F34 /* XMLRPCResponse.m in Sources */,
+				8DE94E8414DEC48A00E11F34 /* RTorrent.m in Sources */,
+				8DE94E8514DEC48A00E11F34 /* Torrent.m in Sources */,
+				8DE94E8614DEC48A00E11F34 /* Tracker.m in Sources */,
+				8DE94E8714DEC48A00E11F34 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
