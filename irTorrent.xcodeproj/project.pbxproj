@@ -23,6 +23,7 @@
 		8D3DAF5E14DE254D0005D3D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF5C14DE254D0005D3D5 /* InfoPlist.strings */; };
 		8D3DAF6014DE254E0005D3D5 /* irTorrentTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF5F14DE254E0005D3D5 /* irTorrentTests.h */; };
 		8D3DAF6214DE254E0005D3D5 /* irTorrentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DAF6114DE254E0005D3D5 /* irTorrentTests.m */; };
+		8D3DAF7214DE25B60005D3D5 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF7014DE25B60005D3D5 /* MainWindow-iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,22 +41,23 @@
 		8D3DAF3114DE254C0005D3D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D3DAF3314DE254C0005D3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8D3DAF3514DE254C0005D3D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8D3DAF3914DE254C0005D3D5 /* irTorrent-Info.plist */ = {isa = PBXFileReference; path = "irTorrent-Info.plist"; sourceTree = "<group>"; };
+		8D3DAF3914DE254C0005D3D5 /* irTorrent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "irTorrent-Info.plist"; sourceTree = "<group>"; };
 		8D3DAF3B14DE254C0005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D3DAF3D14DE254C0005D3D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8D3DAF3F14DE254C0005D3D5 /* irTorrent-Prefix.pch */ = {isa = PBXFileReference; path = "irTorrent-Prefix.pch"; sourceTree = "<group>"; };
-		8D3DAF4014DE254C0005D3D5 /* irTorrentAppDelegate.h */ = {isa = PBXFileReference; path = irTorrentAppDelegate.h; sourceTree = "<group>"; };
+		8D3DAF3F14DE254C0005D3D5 /* irTorrent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "irTorrent-Prefix.pch"; sourceTree = "<group>"; };
+		8D3DAF4014DE254C0005D3D5 /* irTorrentAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irTorrentAppDelegate.h; sourceTree = "<group>"; };
 		8D3DAF4114DE254C0005D3D5 /* irTorrentAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = irTorrentAppDelegate.m; sourceTree = "<group>"; };
 		8D3DAF4414DE254C0005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		8D3DAF4614DE254C0005D3D5 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		8D3DAF4614DE254C0005D3D5 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		8D3DAF4714DE254C0005D3D5 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		8D3DAF4A14DE254D0005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		8D3DAF5114DE254D0005D3D5 /* irTorrentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = irTorrentTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3DAF5214DE254D0005D3D5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		8D3DAF5B14DE254D0005D3D5 /* irTorrentTests-Info.plist */ = {isa = PBXFileReference; path = "irTorrentTests-Info.plist"; sourceTree = "<group>"; };
+		8D3DAF5B14DE254D0005D3D5 /* irTorrentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "irTorrentTests-Info.plist"; sourceTree = "<group>"; };
 		8D3DAF5D14DE254D0005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D3DAF5F14DE254E0005D3D5 /* irTorrentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irTorrentTests.h; sourceTree = "<group>"; };
 		8D3DAF6114DE254E0005D3D5 /* irTorrentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = irTorrentTests.m; sourceTree = "<group>"; };
+		8D3DAF7114DE25B60005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,11 @@
 		8D3DAF3714DE254C0005D3D5 /* irTorrent */ = {
 			isa = PBXGroup;
 			children = (
+				8D3DAF6F14DE25B20005D3D5 /* iPad */,
+				8D3DAF6E14DE258C0005D3D5 /* Controllers */,
+				8D3DAF6D14DE25840005D3D5 /* Views */,
+				8D3DAF6C14DE25690005D3D5 /* Models */,
+				8D3DAF6B14DE25610005D3D5 /* Vendor */,
 				8D3DAF4014DE254C0005D3D5 /* irTorrentAppDelegate.h */,
 				8D3DAF4114DE254C0005D3D5 /* irTorrentAppDelegate.m */,
 				8D3DAF4314DE254C0005D3D5 /* MainWindow.xib */,
@@ -155,6 +162,42 @@
 				8D3DAF5C14DE254D0005D3D5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D3DAF6B14DE25610005D3D5 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		8D3DAF6C14DE25690005D3D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8D3DAF6D14DE25840005D3D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8D3DAF6E14DE258C0005D3D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8D3DAF6F14DE25B20005D3D5 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				8D3DAF7014DE25B60005D3D5 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +270,7 @@
 				8D3DAF3C14DE254C0005D3D5 /* InfoPlist.strings in Resources */,
 				8D3DAF4514DE254C0005D3D5 /* MainWindow.xib in Resources */,
 				8D3DAF4B14DE254D0005D3D5 /* RootViewController.xib in Resources */,
+				8D3DAF7214DE25B60005D3D5 /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +363,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		8D3DAF7014DE25B60005D3D5 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D3DAF7114DE25B60005D3D5 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -371,7 +423,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "irTorrent/irTorrent-Prefix.pch";
 				INFOPLIST_FILE = "irTorrent/irTorrent-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -382,7 +436,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "irTorrent/irTorrent-Prefix.pch";
 				INFOPLIST_FILE = "irTorrent/irTorrent-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,0 +1,6 @@
+[submodule "irTorrent/Vendor/xmlrpc"]
+	path = irTorrent/Vendor/xmlrpc
+	url = https://github.com/koke/xmlrpc.git
+[submodule "irTorrent/Vendor/TBXML"]
+	path = irTorrent/Vendor/TBXML
+	url = https://github.com/71squared/TBXML.git
