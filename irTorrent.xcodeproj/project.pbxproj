@@ -24,6 +24,10 @@
 		8D3DAF6014DE254E0005D3D5 /* irTorrentTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF5F14DE254E0005D3D5 /* irTorrentTests.h */; };
 		8D3DAF6214DE254E0005D3D5 /* irTorrentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DAF6114DE254E0005D3D5 /* irTorrentTests.m */; };
 		8D3DAF7214DE25B60005D3D5 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DAF7014DE25B60005D3D5 /* MainWindow-iPad.xib */; };
+		8D3DAF7814DE2D820005D3D5 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DAF7714DE2D820005D3D5 /* Torrent.m */; };
+		8DAABC3614DE3303001C7A65 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAABC3514DE3303001C7A65 /* User.m */; };
+		8DAABC3A14DE331F001C7A65 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAABC3914DE331F001C7A65 /* Tracker.m */; };
+		8DAABC3D14DE3742001C7A65 /* RTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAABC3C14DE3742001C7A65 /* RTorrent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,14 @@
 		8D3DAF5F14DE254E0005D3D5 /* irTorrentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irTorrentTests.h; sourceTree = "<group>"; };
 		8D3DAF6114DE254E0005D3D5 /* irTorrentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = irTorrentTests.m; sourceTree = "<group>"; };
 		8D3DAF7114DE25B60005D3D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		8D3DAF7614DE2D820005D3D5 /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Torrent.h; path = Classes/Torrent.h; sourceTree = "<group>"; };
+		8D3DAF7714DE2D820005D3D5 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Torrent.m; path = Classes/Torrent.m; sourceTree = "<group>"; };
+		8DAABC3414DE3303001C7A65 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Classes/User.h; sourceTree = "<group>"; };
+		8DAABC3514DE3303001C7A65 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Classes/User.m; sourceTree = "<group>"; };
+		8DAABC3814DE331F001C7A65 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracker.h; path = Classes/Tracker.h; sourceTree = "<group>"; };
+		8DAABC3914DE331F001C7A65 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tracker.m; path = Classes/Tracker.m; sourceTree = "<group>"; };
+		8DAABC3B14DE3742001C7A65 /* RTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTorrent.h; path = Classes/RTorrent.h; sourceTree = "<group>"; };
+		8DAABC3C14DE3742001C7A65 /* RTorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTorrent.m; path = Classes/RTorrent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +181,14 @@
 		8D3DAF6C14DE25690005D3D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8D3DAF7614DE2D820005D3D5 /* Torrent.h */,
+				8D3DAF7714DE2D820005D3D5 /* Torrent.m */,
+				8DAABC3814DE331F001C7A65 /* Tracker.h */,
+				8DAABC3914DE331F001C7A65 /* Tracker.m */,
+				8DAABC3414DE3303001C7A65 /* User.h */,
+				8DAABC3514DE3303001C7A65 /* User.m */,
+				8DAABC3B14DE3742001C7A65 /* RTorrent.h */,
+				8DAABC3C14DE3742001C7A65 /* RTorrent.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -186,6 +206,7 @@
 		8D3DAF6E14DE258C0005D3D5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D3DAF7414DE2CD00005D3D5 /* Headers */,
 				8D3DAF4614DE254C0005D3D5 /* RootViewController.h */,
 				8D3DAF4714DE254C0005D3D5 /* RootViewController.m */,
 			);
@@ -206,6 +227,13 @@
 				8D3DAF4314DE254C0005D3D5 /* MainWindow.xib */,
 			);
 			name = iPhone;
+			sourceTree = "<group>";
+		};
+		8D3DAF7414DE2CD00005D3D5 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +280,9 @@
 /* Begin PBXProject section */
 		8D3DAF2414DE254B0005D3D5 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = crsantos.info;
+			};
 			buildConfigurationList = 8D3DAF2714DE254B0005D3D5 /* Build configuration list for PBXProject "irTorrent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -317,6 +348,10 @@
 				8D3DAF3E14DE254C0005D3D5 /* main.m in Sources */,
 				8D3DAF4214DE254C0005D3D5 /* irTorrentAppDelegate.m in Sources */,
 				8D3DAF4814DE254C0005D3D5 /* RootViewController.m in Sources */,
+				8D3DAF7814DE2D820005D3D5 /* Torrent.m in Sources */,
+				8DAABC3614DE3303001C7A65 /* User.m in Sources */,
+				8DAABC3A14DE331F001C7A65 /* Tracker.m in Sources */,
+				8DAABC3D14DE3742001C7A65 /* RTorrent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +539,7 @@
 				8D3DAF6714DE254E0005D3D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D3DAF6814DE254E0005D3D5 /* Build configuration list for PBXNativeTarget "irTorrentTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +548,7 @@
 				8D3DAF6A14DE254E0005D3D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
