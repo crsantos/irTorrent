@@ -3,4 +3,4 @@
 	url = https://github.com/71squared/TBXML.git
 [submodule "irTorrent/Vendor/xmlrpc"]
 	path = irTorrent/Vendor/xmlrpc
-	url = https://github.com/koke/xmlrpc.git
+	url = https://github.com/eczarny/xmlrpc.git
