@@ -33,11 +33,11 @@
 		8DE94E7714DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6C14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m */; };
 		8DE94E7814DEC40200E11F34 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6E14DEC40200E11F34 /* XMLRPCRequest.m */; };
 		8DE94E7914DEC40200E11F34 /* XMLRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */; };
-		8DE94E7B14DEC44000E11F34 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E7A14DEC44000E11F34 /* libz.dylib */; };
 		8DE94E8414DEC48A00E11F34 /* RTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7D14DEC48A00E11F34 /* RTorrent.m */; };
 		8DE94E8514DEC48A00E11F34 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7F14DEC48A00E11F34 /* Torrent.m */; };
 		8DE94E8614DEC48A00E11F34 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E8114DEC48A00E11F34 /* Tracker.m */; };
 		8DE94E8714DEC48A00E11F34 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E8314DEC48A00E11F34 /* User.m */; };
+		8DE94E8814DEC5E700E11F34 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E7A14DEC44000E11F34 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE94E7B14DEC44000E11F34 /* libz.dylib in Frameworks */,
+				8DE94E8814DEC5E700E11F34 /* libz.dylib in Frameworks */,
 				8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */,
 				8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */,
 				8DE94E1A14DEC35000E11F34 /* CoreGraphics.framework in Frameworks */,
@@ -137,7 +137,6 @@
 		8DE94E0614DEC35000E11F34 = {
 			isa = PBXGroup;
 			children = (
-				8DE94E7A14DEC44000E11F34 /* libz.dylib */,
 				8DE94E1B14DEC35000E11F34 /* irTorrent */,
 				8DE94E3C14DEC35000E11F34 /* irTorrentTests */,
 				8DE94E1414DEC35000E11F34 /* Frameworks */,
@@ -157,6 +156,7 @@
 		8DE94E1414DEC35000E11F34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DE94E7A14DEC44000E11F34 /* libz.dylib */,
 				8DE94E1514DEC35000E11F34 /* UIKit.framework */,
 				8DE94E1714DEC35000E11F34 /* Foundation.framework */,
 				8DE94E1914DEC35000E11F34 /* CoreGraphics.framework */,
