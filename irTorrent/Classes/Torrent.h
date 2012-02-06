@@ -12,6 +12,7 @@
     Based on https://github.com/cjlucas/rtorrent-python/blob/master/rtorrent/torrent.py
  */
 
+// RETRIEVERS
 #define is_hash_checked @"d.is_hash_checked"
 #define is_hash_checking @"d.is_hash_checking"
 #define get_peers_max @"d.get_peers_max"
@@ -77,6 +78,7 @@
 #define get_up_rate @"d.get_up_rate"
 #define get_up_total @"d.get_up_total"
 
+// MODIFIERS
 #define set_uploads_max @"d.set_uploads_max"
 #define set_tied_to_file @"d.set_tied_to_file"
 #define set_tracker_numwant @"d.set_tracker_numwant"
@@ -103,5 +105,8 @@
 
 @property (nonatomic,retain) NSString* rpc_id;
 @property (nonatomic,retain) NSString* info_hash;
+
+#pragma mark - RPC Calls
+- (void) getDirectory;
 
 @end

@@ -13,6 +13,15 @@
 @synthesize rpc_id;
 @synthesize info_hash;
 
+
+#pragma mark - RPC Calls
+
+- (void) getDirectory{
+    
+}
+
+#pragma mark - Initialization
+
 - (id)init
 {
     self = [super init];

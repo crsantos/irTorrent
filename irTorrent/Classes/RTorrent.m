@@ -11,33 +11,9 @@
 
 @implementation RTorrent
 
-@synthesize url;
 @synthesize torrents;
 @synthesize download_list;
 @synthesize connected;
 
-#pragma mark - Init stuff
-- (id)initWithURL:(NSString*) _url
-{
-    self = [super init];
-    if (self) {
-        
-        if (url) {    
-            self.url = _url;
-        }
-    }
-    
-    return self;
-}
-
-#pragma mark - RPC Calls
-/**
-    
- */
-- (NSMutableArray*) get_torrents{
-    
-    // TODO
-    return nil;
-}
 
 @end

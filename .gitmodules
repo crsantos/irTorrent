@@ -4,3 +4,9 @@
 [submodule "irTorrent/Vendor/xmlrpc"]
 	path = irTorrent/Vendor/xmlrpc
 	url = https://github.com/eczarny/xmlrpc.git
+[submodule "irTorrent/Vendor/SVProgressHUD"]
+	path = irTorrent/Vendor/SVProgressHUD
+	url = https://github.com/samvermette/SVProgressHUD.git
+[submodule "irTorrent/Vendor/AFNetworking"]
+	path = irTorrent/Vendor/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git

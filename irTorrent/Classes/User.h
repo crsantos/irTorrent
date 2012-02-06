@@ -7,17 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RTorrent.h"
 
-@interface User : NSObject
+#define kIRTORRENT_DEFAULT_USER @"kIRTORRENT_DEFAULT_USER"
+
+@interface User : NSObject <NSCoding>
 {
     
 }
 
-@property (nonatomic,retain) NSString* username;
-@property (nonatomic,retain) NSString* password;
-@property (nonatomic,retain) NSString* serverUrl;
-@property (nonatomic,retain) NSString* serverPort;
+@property (nonatomic,retain) NSString * username;
+@property (nonatomic,retain) NSString * password;
+@property (nonatomic,retain) NSURL * url;
 
-+ (id)sharedInstance;
++ (id)current;
+
++ (User*) loadUser;
+
++ (void) saveUser;
 
 @end

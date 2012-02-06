@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFXMLRPCClient.h"
 
 /*
  Based on https://github.com/cjlucas/rtorrent-python/blob/master/rtorrent/__init__.py
@@ -134,21 +135,16 @@
 #define set_check_hash @"set_check_hash" // Enable/Disable hash checking on finished torrents    @param arg: True to enable, False to disable   @type arg: bool
 
 // just testing
-#define fake_method @"get_fake_method"
+//#define fake_method @"get_fake_method"
 #define fake_method_dos @"get_fake_method_dos"
 
-@interface RTorrent : NSObject
-{
-    
-}
+#define HTTP @"http://"
+#define RPC_ALIAS @"/RPC2"
 
-@property (nonatomic,retain) NSString * url;
+@interface RTorrent : NSObject
+
 @property (nonatomic,retain) NSMutableArray* torrents;
 @property (nonatomic,retain) NSMutableArray* download_list;
 @property (nonatomic, readwrite) BOOL connected;
-
-- (id)initWithURL:(NSString*) _url;
-
-- (NSMutableArray*) get_torrents;
 
 @end
