@@ -1,7 +1,7 @@
 irTorrent
 =============
 
-XMLRPC iOS Client for rTorrent
+rTorrent XMLRPC iOS Client for rTorrent
 
 --------
 
