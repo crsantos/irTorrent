@@ -20,8 +20,11 @@ static RTorrentAPI *sharedInstance = nil;
 // Get the shared instance and create it if necessary.
 + (RTorrentAPI *)sharedInstance {
 
-    if (sharedInstance == nil) {
-        sharedInstance = [[super allocWithZone:NULL] init];
+    @synchronized(self){
+        
+        if (sharedInstance == nil) {
+            sharedInstance = [[super allocWithZone:NULL] init];
+        }
     }
     
     return sharedInstance;
@@ -81,4 +84,52 @@ static RTorrentAPI *sharedInstance = nil;
 - (id)autorelease {
     return self;
 }
+
+#pragma mark - API operations
+
+/**
+    @method get the specified requested info
+    @param action the info to be requested
+    @param sucessBlock
+    @param failureBlock
+ */
+- (void) downloadRate: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+                andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure{
+    
+    [client callMethod: get_down_rate 
+                parameters:nil
+                   success:success
+                        failure:failure];
+}
+
+/**
+    @method get the upload rate
+    @param sucessBlock
+    @param failureBlock
+ */
+- (void) uploadRate: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+           andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure{
+    
+    [client callMethod: get_up_rate 
+            parameters:nil
+               success:success
+               failure:failure];
+}
+
+/**
+ @method get the download list
+ @param sucessBlock
+ @param failureBlock
+ */
+- (void) downloadList: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+           andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure{
+    
+    [client callMethod: get_download_list 
+            parameters:nil
+               success:success
+               failure:failure];
+}
+
+
+
 @end

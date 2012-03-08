@@ -14,7 +14,11 @@
 #import "User.h"
 #import "AFXMLRPCClient.h"
 #import "RTorrentAPI.h"
+#import "NSString+ByteFormatted.h"
 
 @interface ViewController : UIViewController //<XMLRPCConnectionDelegate>
+
+@property (nonatomic,retain) IBOutlet UILabel * uploadRateLbl;
+@property (nonatomic,retain) IBOutlet UILabel * downloadRateLbl;
 
 @end

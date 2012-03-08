@@ -14,6 +14,7 @@
  */
 
 // RETRIEVERS
+#define get_download_list @"download_list"
 #define get_xmlrpc_size_limit @"get_xmlrpc_size_limit"
 #define get_proxy_address @"get_proxy_address"
 #define get_split_suffix @"get_split_suffix"
@@ -146,5 +147,6 @@
 @property (nonatomic,retain) NSMutableArray* torrents;
 @property (nonatomic,retain) NSMutableArray* download_list;
 @property (nonatomic, readwrite) BOOL connected;
+
 
 @end

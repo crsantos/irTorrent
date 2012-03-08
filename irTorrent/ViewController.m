@@ -11,111 +11,86 @@
 
 @implementation ViewController
 
+@synthesize uploadRateLbl;
+@synthesize downloadRateLbl;
+
 #pragma mark - XMLRPC Tests
 
 - (void) testXMLRPC{
     
-    // initial config    
-    
+    // Call singleton API object
     RTorrentAPI * api = [RTorrentAPI sharedInstance];
     
-    [api.client callMethod:@"get_download_rate" 
-            parameters:nil
-               success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                   
-                   NSLog(@"RESPONSE TYPE: %@", [responseObject class]);
-                   
-#ifdef DEBUG                        
-                   NSLog(@"Parsed response: %@", responseObject);
+    // test download rate
+    [api downloadRate:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+#ifdef DEBUG          
+        CMLog(@"Download rate: %@", responseObject);
 #endif
-                   
-               } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                   
-                   NSLog(@"FAILED REQUEST! %@",error);
-                   
-               }];
+        downloadRateLbl.text = [NSString stringWithFormat:@"Download rate:\t%@",responseObject];
+    }
+           andFailure:^(AFHTTPRequestOperation *operation, NSError *error) {
+#ifdef DEBUG
+               CMLog(@"FAILED REQUEST! %@",error);
+#endif   
+           }
+     ];
     
+    // test upload rate
+    [api uploadRate:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+#ifdef DEBUG          
+        CMLog(@"Upload rate: %@", responseObject);
+#endif
+        uploadRateLbl.text = [NSString stringWithFormat:@"Upload rate:\t%@",responseObject];
+        
+    }
+           andFailure:^(AFHTTPRequestOperation *operation, NSError *error) {
+#ifdef DEBUG
+               CMLog(@"FAILED REQUEST! %@",error);
+#endif   
+           }
+     ];
     
-    
-//    NSURL *URL = [NSURL URLWithString: [NSString stringWithFormat:@"%@%@%@",HTTP,@"192.168.1.71",RPC_ALIAS] ];
-//    
-//    AFXMLRPCClient *api = [AFXMLRPCClient clientWithXMLRPCEndpoint:URL];
-//    
-//    //download_list // get_directory // get_session // system.client_version // get_download_rate // 
-//    
-//    [api callMethod:@"get_download_rate" 
-//         parameters:nil
-//            success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//                
-//                NSLog(@"RESPONSE TYPE: %@", [responseObject class]);
-//                
-//#ifdef DEBUG                        
-//                NSLog(@"Parsed response: %@", responseObject);
-//#endif
-//
-//            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//                
-//                NSLog(@"FAILED REQUEST! %@",error);
-//                
-//            }];
-
+    // test download list
+    [api downloadList:^(AFHTTPRequestOperation *operation, id responseObject) {
+              
+        // For each hash, get the torrent
+        for (NSString* hash in responseObject) {
+            
+            [api.client callMethod: @"d.get_name" 
+                    parameters:[NSArray arrayWithObject:hash ]
+                           success:^(AFHTTPRequestOperation *operation, id responseObject){
+                               
+                               CMLog(@"Name: %@", responseObject);   
+                           }
+                            
+                           failure:^(AFHTTPRequestOperation *operation, NSError *error){
+                               CMLog(@"Estudasses..");
+                           }];
+            
+            [api.client callMethod: @"d.get_up_total"
+                        parameters:[NSArray arrayWithObject:hash ]
+                           success:^(AFHTTPRequestOperation *operation, id responseObject){
+                               NSString* t= responseObject;
+                               
+                               CMLog(@"Total Uploaded: %@", [t formattedBytes] );
+                               
+                           }
+             
+                           failure:^(AFHTTPRequestOperation *operation, NSError *error){
+                               CMLog(@"Estudasses..");
+                           }];
+            
+        }
+    }
+         andFailure:^(AFHTTPRequestOperation *operation, NSError *error) {
+#ifdef DEBUG
+             CMLog(@"FAILED REQUEST! %@",error);
+#endif   
+         }
+     ];
 }
-
-//- (void)request: (XMLRPCRequest *)request didReceiveResponse: (XMLRPCResponse *)response {
-//    
-//    if ([response isFault]) {
-//        NSLog(@"Fault code: %@", [response faultCode]);
-//        
-//        NSLog(@"Fault string: %@", [response faultString]);
-//    }
-//    else{
-//        
-//        NSLog(@"Parsed response: %@", [response object]);
-//    }
-//    
-//#ifdef DEBUG    
-//    NSLog(@"Response body: %@", [response body]);
-//#endif
-//}
-//- (void)request: (XMLRPCRequest *)request didFailWithError: (NSError *)error
-//{
-//        NSLog(@"FAILED");
-//}
-//
-//- (BOOL)request: (XMLRPCRequest *)request canAuthenticateAgainstProtectionSpace: (NSURLProtectionSpace *)protectionSpace{
-//    
-//    return YES;
-//}
-
-//- (void)request: (XMLRPCRequest *)request didReceiveAuthenticationChallenge: (NSURLAuthenticationChallenge *)challenge{
-//    NSLog(@"didReceiveAuthenticationChallenge: %@", challenge);
-//    
-//    
-//    if ( challenge.previousFailureCount > 1)
-//    {
-//        [[XMLRPCConnectionManager sharedManager] closeConnections]; // closes any active connections
-//        
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Authentication Error"
-//                                                        message:@"Too many unsuccessul login attempts." 
-//                                                       delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//        
-//        [alert show];
-//        [alert release];
-//    }
-//    else 
-//    {
-//        User * user = [User current];
-//        // Answer the challenge
-//        NSURLCredential *cred = [[[NSURLCredential alloc] initWithUser:user.username password:user.password
-//                                                           persistence:NSURLCredentialPersistenceForSession] autorelease];
-//        [challenge.sender useCredential:cred forAuthenticationChallenge:challenge];
-//    }
-//    
-//}
-
-//- (void)request: (XMLRPCRequest *)request didCancelAuthenticationChallenge: (NSURLAuthenticationChallenge *)challenge{
-//            NSLog(@"didCancelAuthenticationChallenge: %@", challenge);
-//}
 
 
 #pragma mark - Memory warnings
@@ -141,8 +116,8 @@
 
         NSLog(@"INIT user");
         User * user = [User current];
-        user.username = @"#######";
-        user.password = @"#######";
+        user.username = @"#########";
+        user.password = @"#########";
         user.url = [NSURL URLWithString: [NSString stringWithFormat:@"%@%@%@",HTTP,@"192.168.1.71",RPC_ALIAS] ] ;
         
         [User saveUser];
