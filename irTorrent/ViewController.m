@@ -52,44 +52,27 @@
            }
      ];
     
-    // test download list
-    [api downloadList:^(AFHTTPRequestOperation *operation, id responseObject) {
-              
-        // For each hash, get the torrent
-        for (NSString* hash in responseObject) {
-            
-            [api.client callMethod: @"d.get_name" 
-                    parameters:[NSArray arrayWithObject:hash ]
-                           success:^(AFHTTPRequestOperation *operation, id responseObject){
-                               
-                               CMLog(@"Name: %@", responseObject);   
-                           }
-                            
-                           failure:^(AFHTTPRequestOperation *operation, NSError *error){
-                               CMLog(@"Estudasses..");
-                           }];
-            
-            [api.client callMethod: @"d.get_up_total"
-                        parameters:[NSArray arrayWithObject:hash ]
-                           success:^(AFHTTPRequestOperation *operation, id responseObject){
-                               NSString* t= responseObject;
-                               
-                               CMLog(@"Total Uploaded: %@", [t formattedBytes] );
-                               
-                           }
-             
-                           failure:^(AFHTTPRequestOperation *operation, NSError *error){
-                               CMLog(@"Estudasses..");
-                           }];
-            
-        }
-    }
-         andFailure:^(AFHTTPRequestOperation *operation, NSError *error) {
-#ifdef DEBUG
-             CMLog(@"FAILED REQUEST! %@",error);
-#endif   
-         }
-     ];
+    // test main download list
+    [api mainListMulticall:^(AFHTTPRequestOperation *operation, id responseObject){
+                       
+                       //CMLog(@"\n\nFULL LIST [%d]: %@", [responseObject count], responseObject );
+                       
+                       for (NSArray* torrent in responseObject) {
+                            CMLog(@"%@: %@ [%@|%@] Peers: %@/%@ (%@)", 
+                                  [torrent objectAtIndex:kHash],
+                                  [torrent objectAtIndex:kName],
+                                  [torrent objectAtIndex:kUpRate],
+                                  [torrent objectAtIndex:kDownRate],
+                                  [torrent objectAtIndex:kPeersConnected],
+                                  [torrent objectAtIndex:kPeersAccounted],
+                                  [NSDate dateWithTimeIntervalSince1970:[[torrent objectAtIndex:kCreationDate] intValue]]
+                                  )
+                       }
+                   }
+     
+                   andFailure:^(AFHTTPRequestOperation *operation, NSError *error){
+                       CMLog(@"Estudasses..");
+                   }];   
 }
 
 
@@ -110,11 +93,14 @@
     if ( [User loadUser] ) {
         
         // there's a user on storage
-        NSLog(@"User found on storage");
+#ifdef DEBUG
+        CMLog(@"User found on storage");
+#endif
     }
     else{
-
-        NSLog(@"INIT user");
+#ifdef DEBUG
+        CMLog(@"INIT user - just for test purposes");
+#endif
         User * user = [User current];
         user.username = @"#########";
         user.password = @"#########";

@@ -29,4 +29,6 @@
 - (void) downloadList: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
            andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
+- (void) mainListMulticall: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+                andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 @end

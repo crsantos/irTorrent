@@ -8,13 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "RTorrent.h"
+#import "Torrent.h"
 
 #define kIRTORRENT_DEFAULT_USER @"kIRTORRENT_DEFAULT_USER"
 
 @interface User : NSObject <NSCoding>
-{
-    
-}
 
 @property (nonatomic,retain) NSString * username;
 @property (nonatomic,retain) NSString * password;

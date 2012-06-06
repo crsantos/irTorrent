@@ -10,3 +10,6 @@
 [submodule "irTorrent/Vendor/AFNetworking"]
 	path = irTorrent/Vendor/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "irTorrent/Vendor/RelativeDateDescriptor"]
+	path = irTorrent/Vendor/RelativeDateDescriptor
+	url = https://github.com/MattMcComb/RelativeDateDescriptor.git

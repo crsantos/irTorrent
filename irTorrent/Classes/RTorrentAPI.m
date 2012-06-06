@@ -125,11 +125,33 @@ static RTorrentAPI *sharedInstance = nil;
            andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure{
     
     [client callMethod: get_download_list 
-            parameters:nil
+            parameters:[NSArray arrayWithObject:@""]
                success:success
                failure:failure];
 }
 
+/**
+ @method get the main list for all torrents including info
+ @param sucessBlock
+ @param failureBlock
+ */
+- (void) mainListMulticall: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+           andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure{
+    
+    [client callMethod: d_multicall 
+            parameters:
+                 [NSArray arrayWithObjects: 
+                  @"main", @"d.get_hash=", @"d.get_name=", @"d.get_state=", 
+                  @"d.get_down_rate=", @"d.get_up_rate=", @"d.get_peers_connected=", 
+                  @"d.get_peers_not_connected=", @"d.get_peers_accounted=", 
+                  @"d.get_bytes_done=", @"d.get_up_total=", @"d.get_size_bytes=", 
+                  @"d.get_creation_date=", @"d.get_left_bytes=", @"d.get_complete=", 
+                  @"d.is_active=", @"d.is_hash_checking=", 
+                  @"d.get_base_path=", @"d.get_base_filename=", 
+                  nil ]
+               success:success
+               failure:failure];
+}
 
 
 @end

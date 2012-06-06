@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D3D636514DF033A000B950D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D3D636214DF033A000B950D /* SVProgressHUD.bundle */; };
+		8D3D636614DF033A000B950D /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D636414DF033A000B950D /* SVProgressHUD.m */; };
+		8D3D639314DF0EC5000B950D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D638014DF0EC5000B950D /* AFHTTPRequestOperation.m */; };
+		8D3D639414DF0EC5000B950D /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D638214DF0EC5000B950D /* AFImageRequestOperation.m */; };
+		8D3D639514DF0EC5000B950D /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D638414DF0EC5000B950D /* AFJSONRequestOperation.m */; };
+		8D3D639614DF0EC5000B950D /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D638614DF0EC5000B950D /* AFJSONUtilities.m */; };
+		8D3D639714DF0EC5000B950D /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D638814DF0EC5000B950D /* AFNetworkActivityIndicatorManager.m */; };
+		8D3D639814DF0EC5000B950D /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D638B14DF0EC5000B950D /* AFPropertyListRequestOperation.m */; };
+		8D3D639914DF0EC5000B950D /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D638D14DF0EC5000B950D /* AFURLConnectionOperation.m */; };
+		8D3D639A14DF0EC5000B950D /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D638F14DF0EC5000B950D /* AFXMLRequestOperation.m */; };
+		8D3D639B14DF0EC5000B950D /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D639114DF0EC5000B950D /* UIImageView+AFNetworking.m */; };
+		8D3D639E14DF1621000B950D /* AFXMLRPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D639D14DF1621000B950D /* AFXMLRPCClient.m */; };
+		8D3D63A814DF315F000B950D /* RTorrentAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D63A714DF315F000B950D /* RTorrentAPI.m */; };
+		8D54BA4B1509727600F603C8 /* NSString+ByteFormatted.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D54BA4A1509727600F603C8 /* NSString+ByteFormatted.m */; };
+		8DC7C94A1580193500C95FC9 /* RelativeDateDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */; };
+		8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1514DEC35000E11F34 /* UIKit.framework */; };
+		8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1714DEC35000E11F34 /* Foundation.framework */; };
+		8DE94E1A14DEC35000E11F34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1914DEC35000E11F34 /* CoreGraphics.framework */; };
+		8DE94E2014DEC35000E11F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94E1E14DEC35000E11F34 /* InfoPlist.strings */; };
+		8DE94E2214DEC35000E11F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E2114DEC35000E11F34 /* main.m */; };
+		8DE94E2614DEC35000E11F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E2514DEC35000E11F34 /* AppDelegate.m */; };
+		8DE94E2914DEC35000E11F34 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94E2714DEC35000E11F34 /* MainStoryboard_iPhone.storyboard */; };
+		8DE94E2C14DEC35000E11F34 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94E2A14DEC35000E11F34 /* MainStoryboard_iPad.storyboard */; };
+		8DE94E2F14DEC35000E11F34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E2E14DEC35000E11F34 /* ViewController.m */; };
+		8DE94E3714DEC35000E11F34 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E3614DEC35000E11F34 /* SenTestingKit.framework */; };
+		8DE94E3814DEC35000E11F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1514DEC35000E11F34 /* UIKit.framework */; };
+		8DE94E3914DEC35000E11F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1714DEC35000E11F34 /* Foundation.framework */; };
+		8DE94E4114DEC35000E11F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94E3F14DEC35000E11F34 /* InfoPlist.strings */; };
+		8DE94E4414DEC35000E11F34 /* irTorrentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E4314DEC35000E11F34 /* irTorrentTests.m */; };
+		8DE94E5914DEC3F100E11F34 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5614DEC3F100E11F34 /* TBXML.m */; };
+		8DE94E5A14DEC3F100E11F34 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5714DEC3F100E11F34 /* TBXML+Compression.m */; };
+		8DE94E5B14DEC3F100E11F34 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5814DEC3F100E11F34 /* TBXML+HTTP.m */; };
+		8DE94E7114DEC40200E11F34 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5D14DEC40200E11F34 /* NSDataAdditions.m */; };
+		8DE94E7214DEC40200E11F34 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E5F14DEC40200E11F34 /* NSStringAdditions.m */; };
+		8DE94E7314DEC40200E11F34 /* XMLRPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6314DEC40200E11F34 /* XMLRPCConnection.m */; };
+		8DE94E7414DEC40200E11F34 /* XMLRPCConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6614DEC40200E11F34 /* XMLRPCConnectionManager.m */; };
+		8DE94E7514DEC40200E11F34 /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6814DEC40200E11F34 /* XMLRPCEncoder.m */; };
+		8DE94E7614DEC40200E11F34 /* XMLRPCEventBasedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6A14DEC40200E11F34 /* XMLRPCEventBasedParser.m */; };
+		8DE94E7714DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6C14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m */; };
+		8DE94E7814DEC40200E11F34 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E6E14DEC40200E11F34 /* XMLRPCRequest.m */; };
+		8DE94E7914DEC40200E11F34 /* XMLRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */; };
+		8DE94E8414DEC48A00E11F34 /* RTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7D14DEC48A00E11F34 /* RTorrent.m */; };
+		8DE94E8514DEC48A00E11F34 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E7F14DEC48A00E11F34 /* Torrent.m */; };
+		8DE94E8614DEC48A00E11F34 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E8114DEC48A00E11F34 /* Tracker.m */; };
+		8DE94E8714DEC48A00E11F34 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE94E8314DEC48A00E11F34 /* User.m */; };
+		8DE94E8814DEC5E700E11F34 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E7A14DEC44000E11F34 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DE94E3A14DEC35000E11F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DE94E0814DEC35000E11F34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DE94E1014DEC35000E11F34;
+			remoteInfo = irTorrent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D3D636214DF033A000B950D /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = Vendor/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		8D3D636314DF033A000B950D /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = Vendor/SVProgressHUD/SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		8D3D636414DF033A000B950D /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = Vendor/SVProgressHUD/SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		8D3D637F14DF0EC5000B950D /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = Vendor/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		8D3D638014DF0EC5000B950D /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = Vendor/AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		8D3D638114DF0EC5000B950D /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = Vendor/AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
+		8D3D638214DF0EC5000B950D /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = Vendor/AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
+		8D3D638314DF0EC5000B950D /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = Vendor/AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		8D3D638414DF0EC5000B950D /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = Vendor/AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		8D3D638514DF0EC5000B950D /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONUtilities.h; path = Vendor/AFNetworking/AFNetworking/AFJSONUtilities.h; sourceTree = "<group>"; };
+		8D3D638614DF0EC5000B950D /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONUtilities.m; path = Vendor/AFNetworking/AFNetworking/AFJSONUtilities.m; sourceTree = "<group>"; };
+		8D3D638714DF0EC5000B950D /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = Vendor/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		8D3D638814DF0EC5000B950D /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = Vendor/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		8D3D638914DF0EC5000B950D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = Vendor/AFNetworking/AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		8D3D638A14DF0EC5000B950D /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = Vendor/AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		8D3D638B14DF0EC5000B950D /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = Vendor/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		8D3D638C14DF0EC5000B950D /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = Vendor/AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		8D3D638D14DF0EC5000B950D /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = Vendor/AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		8D3D638E14DF0EC5000B950D /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = Vendor/AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		8D3D638F14DF0EC5000B950D /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = Vendor/AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		8D3D639014DF0EC5000B950D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "Vendor/AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		8D3D639114DF0EC5000B950D /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "Vendor/AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		8D3D639C14DF1621000B950D /* AFXMLRPCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRPCClient.h; path = Classes/AFXMLRPCClient.h; sourceTree = "<group>"; };
+		8D3D639D14DF1621000B950D /* AFXMLRPCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRPCClient.m; path = Classes/AFXMLRPCClient.m; sourceTree = "<group>"; };
+		8D3D63A614DF315F000B950D /* RTorrentAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTorrentAPI.h; path = Classes/RTorrentAPI.h; sourceTree = "<group>"; };
+		8D3D63A714DF315F000B950D /* RTorrentAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTorrentAPI.m; path = Classes/RTorrentAPI.m; sourceTree = "<group>"; };
+		8D54BA491509727600F603C8 /* NSString+ByteFormatted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ByteFormatted.h"; path = "Classes/NSString+ByteFormatted.h"; sourceTree = "<group>"; };
+		8D54BA4A1509727600F603C8 /* NSString+ByteFormatted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ByteFormatted.m"; path = "Classes/NSString+ByteFormatted.m"; sourceTree = "<group>"; };
+		8DC7C9471580193500C95FC9 /* RelativeDateDescriptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RelativeDateDescriptor-Prefix.pch"; sourceTree = "<group>"; };
+		8DC7C9481580193500C95FC9 /* RelativeDateDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDescriptor.h; sourceTree = "<group>"; };
+		8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeDateDescriptor.m; sourceTree = "<group>"; };
+		8DE1021A15095CAD00BCFE36 /* SystemMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemMacros.h; path = Classes/SystemMacros.h; sourceTree = "<group>"; };
+		8DE94E1114DEC35000E11F34 /* irTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = irTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE94E1514DEC35000E11F34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8DE94E1714DEC35000E11F34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8DE94E1914DEC35000E11F34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8DE94E1D14DEC35000E11F34 /* irTorrent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "irTorrent-Info.plist"; sourceTree = "<group>"; };
+		8DE94E1F14DEC35000E11F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DE94E2114DEC35000E11F34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8DE94E2314DEC35000E11F34 /* irTorrent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "irTorrent-Prefix.pch"; sourceTree = "<group>"; };
+		8DE94E2414DEC35000E11F34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8DE94E2514DEC35000E11F34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8DE94E2814DEC35000E11F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		8DE94E2B14DEC35000E11F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		8DE94E2D14DEC35000E11F34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8DE94E2E14DEC35000E11F34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8DE94E3514DEC35000E11F34 /* irTorrentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = irTorrentTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE94E3614DEC35000E11F34 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8DE94E3E14DEC35000E11F34 /* irTorrentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "irTorrentTests-Info.plist"; sourceTree = "<group>"; };
+		8DE94E4014DEC35000E11F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DE94E4214DEC35000E11F34 /* irTorrentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irTorrentTests.h; sourceTree = "<group>"; };
+		8DE94E4314DEC35000E11F34 /* irTorrentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = irTorrentTests.m; sourceTree = "<group>"; };
+		8DE94E5314DEC3EA00E11F34 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBXML.h; path = "Vendor/TBXML/TBXML-Headers/TBXML.h"; sourceTree = "<group>"; };
+		8DE94E5414DEC3EA00E11F34 /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TBXML+Compression.h"; path = "Vendor/TBXML/TBXML-Headers/TBXML+Compression.h"; sourceTree = "<group>"; };
+		8DE94E5514DEC3EA00E11F34 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TBXML+HTTP.h"; path = "Vendor/TBXML/TBXML-Headers/TBXML+HTTP.h"; sourceTree = "<group>"; };
+		8DE94E5614DEC3F100E11F34 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBXML.m; path = "Vendor/TBXML/TBXML-Code/TBXML.m"; sourceTree = "<group>"; };
+		8DE94E5714DEC3F100E11F34 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+Compression.m"; path = "Vendor/TBXML/TBXML-Code/TBXML+Compression.m"; sourceTree = "<group>"; };
+		8DE94E5814DEC3F100E11F34 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+HTTP.m"; path = "Vendor/TBXML/TBXML-Code/TBXML+HTTP.m"; sourceTree = "<group>"; };
+		8DE94E5C14DEC40200E11F34 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataAdditions.h; path = Vendor/xmlrpc/NSDataAdditions.h; sourceTree = "<group>"; };
+		8DE94E5D14DEC40200E11F34 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataAdditions.m; path = Vendor/xmlrpc/NSDataAdditions.m; sourceTree = "<group>"; };
+		8DE94E5E14DEC40200E11F34 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSStringAdditions.h; path = Vendor/xmlrpc/NSStringAdditions.h; sourceTree = "<group>"; };
+		8DE94E5F14DEC40200E11F34 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSStringAdditions.m; path = Vendor/xmlrpc/NSStringAdditions.m; sourceTree = "<group>"; };
+		8DE94E6014DEC40200E11F34 /* XMLRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPC.h; path = Vendor/xmlrpc/XMLRPC.h; sourceTree = "<group>"; };
+		8DE94E6114DEC40200E11F34 /* XMLRPC.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPC.pch; path = Vendor/xmlrpc/XMLRPC.pch; sourceTree = "<group>"; };
+		8DE94E6214DEC40200E11F34 /* XMLRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCConnection.h; path = Vendor/xmlrpc/XMLRPCConnection.h; sourceTree = "<group>"; };
+		8DE94E6314DEC40200E11F34 /* XMLRPCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCConnection.m; path = Vendor/xmlrpc/XMLRPCConnection.m; sourceTree = "<group>"; };
+		8DE94E6414DEC40200E11F34 /* XMLRPCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCConnectionDelegate.h; path = Vendor/xmlrpc/XMLRPCConnectionDelegate.h; sourceTree = "<group>"; };
+		8DE94E6514DEC40200E11F34 /* XMLRPCConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCConnectionManager.h; path = Vendor/xmlrpc/XMLRPCConnectionManager.h; sourceTree = "<group>"; };
+		8DE94E6614DEC40200E11F34 /* XMLRPCConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCConnectionManager.m; path = Vendor/xmlrpc/XMLRPCConnectionManager.m; sourceTree = "<group>"; };
+		8DE94E6714DEC40200E11F34 /* XMLRPCEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCEncoder.h; path = Vendor/xmlrpc/XMLRPCEncoder.h; sourceTree = "<group>"; };
+		8DE94E6814DEC40200E11F34 /* XMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCEncoder.m; path = Vendor/xmlrpc/XMLRPCEncoder.m; sourceTree = "<group>"; };
+		8DE94E6914DEC40200E11F34 /* XMLRPCEventBasedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCEventBasedParser.h; path = Vendor/xmlrpc/XMLRPCEventBasedParser.h; sourceTree = "<group>"; };
+		8DE94E6A14DEC40200E11F34 /* XMLRPCEventBasedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCEventBasedParser.m; path = Vendor/xmlrpc/XMLRPCEventBasedParser.m; sourceTree = "<group>"; };
+		8DE94E6B14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCEventBasedParserDelegate.h; path = Vendor/xmlrpc/XMLRPCEventBasedParserDelegate.h; sourceTree = "<group>"; };
+		8DE94E6C14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCEventBasedParserDelegate.m; path = Vendor/xmlrpc/XMLRPCEventBasedParserDelegate.m; sourceTree = "<group>"; };
+		8DE94E6D14DEC40200E11F34 /* XMLRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCRequest.h; path = Vendor/xmlrpc/XMLRPCRequest.h; sourceTree = "<group>"; };
+		8DE94E6E14DEC40200E11F34 /* XMLRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCRequest.m; path = Vendor/xmlrpc/XMLRPCRequest.m; sourceTree = "<group>"; };
+		8DE94E6F14DEC40200E11F34 /* XMLRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCResponse.h; path = Vendor/xmlrpc/XMLRPCResponse.h; sourceTree = "<group>"; };
+		8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCResponse.m; path = Vendor/xmlrpc/XMLRPCResponse.m; sourceTree = "<group>"; };
+		8DE94E7A14DEC44000E11F34 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8DE94E7C14DEC48A00E11F34 /* RTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTorrent.h; path = irTorrent/Classes/RTorrent.h; sourceTree = "<group>"; };
+		8DE94E7D14DEC48A00E11F34 /* RTorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTorrent.m; path = irTorrent/Classes/RTorrent.m; sourceTree = "<group>"; };
+		8DE94E7E14DEC48A00E11F34 /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Torrent.h; path = irTorrent/Classes/Torrent.h; sourceTree = "<group>"; };
+		8DE94E7F14DEC48A00E11F34 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Torrent.m; path = irTorrent/Classes/Torrent.m; sourceTree = "<group>"; };
+		8DE94E8014DEC48A00E11F34 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracker.h; path = irTorrent/Classes/Tracker.h; sourceTree = "<group>"; };
+		8DE94E8114DEC48A00E11F34 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tracker.m; path = irTorrent/Classes/Tracker.m; sourceTree = "<group>"; };
+		8DE94E8214DEC48A00E11F34 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = irTorrent/Classes/User.h; sourceTree = "<group>"; };
+		8DE94E8314DEC48A00E11F34 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = irTorrent/Classes/User.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DE94E0E14DEC35000E11F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE94E8814DEC5E700E11F34 /* libz.dylib in Frameworks */,
+				8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */,
+				8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */,
+				8DE94E1A14DEC35000E11F34 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE94E3114DEC35000E11F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE94E3714DEC35000E11F34 /* SenTestingKit.framework in Frameworks */,
+				8DE94E3814DEC35000E11F34 /* UIKit.framework in Frameworks */,
+				8DE94E3914DEC35000E11F34 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D3D636114DF031E000B950D /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D636214DF033A000B950D /* SVProgressHUD.bundle */,
+				8D3D636314DF033A000B950D /* SVProgressHUD.h */,
+				8D3D636414DF033A000B950D /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		8D3D636714DF0744000B950D /* api */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D639C14DF1621000B950D /* AFXMLRPCClient.h */,
+				8D3D639D14DF1621000B950D /* AFXMLRPCClient.m */,
+				8D3D63A614DF315F000B950D /* RTorrentAPI.h */,
+				8D3D63A714DF315F000B950D /* RTorrentAPI.m */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		8D3D636E14DF09C5000B950D /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D637F14DF0EC5000B950D /* AFHTTPRequestOperation.h */,
+				8D3D638014DF0EC5000B950D /* AFHTTPRequestOperation.m */,
+				8D3D638114DF0EC5000B950D /* AFImageRequestOperation.h */,
+				8D3D638214DF0EC5000B950D /* AFImageRequestOperation.m */,
+				8D3D638314DF0EC5000B950D /* AFJSONRequestOperation.h */,
+				8D3D638414DF0EC5000B950D /* AFJSONRequestOperation.m */,
+				8D3D638514DF0EC5000B950D /* AFJSONUtilities.h */,
+				8D3D638614DF0EC5000B950D /* AFJSONUtilities.m */,
+				8D3D638714DF0EC5000B950D /* AFNetworkActivityIndicatorManager.h */,
+				8D3D638814DF0EC5000B950D /* AFNetworkActivityIndicatorManager.m */,
+				8D3D638914DF0EC5000B950D /* AFNetworking.h */,
+				8D3D638A14DF0EC5000B950D /* AFPropertyListRequestOperation.h */,
+				8D3D638B14DF0EC5000B950D /* AFPropertyListRequestOperation.m */,
+				8D3D638C14DF0EC5000B950D /* AFURLConnectionOperation.h */,
+				8D3D638D14DF0EC5000B950D /* AFURLConnectionOperation.m */,
+				8D3D638E14DF0EC5000B950D /* AFXMLRequestOperation.h */,
+				8D3D638F14DF0EC5000B950D /* AFXMLRequestOperation.m */,
+				8D3D639014DF0EC5000B950D /* UIImageView+AFNetworking.h */,
+				8D3D639114DF0EC5000B950D /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		8D3D637914DF0CA0000B950D /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E5C14DEC40200E11F34 /* NSDataAdditions.h */,
+				8DE94E5D14DEC40200E11F34 /* NSDataAdditions.m */,
+				8DE94E5E14DEC40200E11F34 /* NSStringAdditions.h */,
+				8DE94E5F14DEC40200E11F34 /* NSStringAdditions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		8DC7C9461580193500C95FC9 /* RelativeDateDescriptor */ = {
+			isa = PBXGroup;
+			children = (
+				8DC7C9471580193500C95FC9 /* RelativeDateDescriptor-Prefix.pch */,
+				8DC7C9481580193500C95FC9 /* RelativeDateDescriptor.h */,
+				8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */,
+			);
+			name = RelativeDateDescriptor;
+			path = Vendor/RelativeDateDescriptor/RelativeDateDescriptor;
+			sourceTree = "<group>";
+		};
+		8DE1021815095C8B00BCFE36 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8DE1021A15095CAD00BCFE36 /* SystemMacros.h */,
+				8D54BA491509727600F603C8 /* NSString+ByteFormatted.h */,
+				8D54BA4A1509727600F603C8 /* NSString+ByteFormatted.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		8DE94E0614DEC35000E11F34 = {
+			isa = PBXGroup;
+			children = (
+				8DE94E1B14DEC35000E11F34 /* irTorrent */,
+				8DE94E3C14DEC35000E11F34 /* irTorrentTests */,
+				8DE94E1414DEC35000E11F34 /* Frameworks */,
+				8DE94E1214DEC35000E11F34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DE94E1214DEC35000E11F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E1114DEC35000E11F34 /* irTorrent.app */,
+				8DE94E3514DEC35000E11F34 /* irTorrentTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DE94E1414DEC35000E11F34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E7A14DEC44000E11F34 /* libz.dylib */,
+				8DE94E1514DEC35000E11F34 /* UIKit.framework */,
+				8DE94E1714DEC35000E11F34 /* Foundation.framework */,
+				8DE94E1914DEC35000E11F34 /* CoreGraphics.framework */,
+				8DE94E3614DEC35000E11F34 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DE94E1B14DEC35000E11F34 /* irTorrent */ = {
+			isa = PBXGroup;
+			children = (
+				8DE1021815095C8B00BCFE36 /* Util */,
+				8D3D636714DF0744000B950D /* api */,
+				8DE94E5014DEC37500E11F34 /* Vendor */,
+				8DE94E4F14DEC36700E11F34 /* Models */,
+				8DE94E4E14DEC36400E11F34 /* Views */,
+				8DE94E4D14DEC35A00E11F34 /* Controllers */,
+				8DE94E2414DEC35000E11F34 /* AppDelegate.h */,
+				8DE94E2514DEC35000E11F34 /* AppDelegate.m */,
+				8DE94E1C14DEC35000E11F34 /* Supporting Files */,
+			);
+			path = irTorrent;
+			sourceTree = "<group>";
+		};
+		8DE94E1C14DEC35000E11F34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E1D14DEC35000E11F34 /* irTorrent-Info.plist */,
+				8DE94E1E14DEC35000E11F34 /* InfoPlist.strings */,
+				8DE94E2114DEC35000E11F34 /* main.m */,
+				8DE94E2314DEC35000E11F34 /* irTorrent-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DE94E3C14DEC35000E11F34 /* irTorrentTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E4214DEC35000E11F34 /* irTorrentTests.h */,
+				8DE94E4314DEC35000E11F34 /* irTorrentTests.m */,
+				8DE94E3D14DEC35000E11F34 /* Supporting Files */,
+			);
+			path = irTorrentTests;
+			sourceTree = "<group>";
+		};
+		8DE94E3D14DEC35000E11F34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E3E14DEC35000E11F34 /* irTorrentTests-Info.plist */,
+				8DE94E3F14DEC35000E11F34 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DE94E4D14DEC35A00E11F34 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E2D14DEC35000E11F34 /* ViewController.h */,
+				8DE94E2E14DEC35000E11F34 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8DE94E4E14DEC36400E11F34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E2714DEC35000E11F34 /* MainStoryboard_iPhone.storyboard */,
+				8DE94E2A14DEC35000E11F34 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8DE94E4F14DEC36700E11F34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E7C14DEC48A00E11F34 /* RTorrent.h */,
+				8DE94E7D14DEC48A00E11F34 /* RTorrent.m */,
+				8DE94E7E14DEC48A00E11F34 /* Torrent.h */,
+				8DE94E7F14DEC48A00E11F34 /* Torrent.m */,
+				8DE94E8014DEC48A00E11F34 /* Tracker.h */,
+				8DE94E8114DEC48A00E11F34 /* Tracker.m */,
+				8DE94E8214DEC48A00E11F34 /* User.h */,
+				8DE94E8314DEC48A00E11F34 /* User.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8DE94E5014DEC37500E11F34 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8DC7C9461580193500C95FC9 /* RelativeDateDescriptor */,
+				8D3D636E14DF09C5000B950D /* AFNetworking */,
+				8D3D636114DF031E000B950D /* SVProgressHUD */,
+				8DE94E5214DEC3DF00E11F34 /* xmlrpc */,
+				8DE94E5114DEC3DA00E11F34 /* TBXML */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		8DE94E5114DEC3DA00E11F34 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94E5314DEC3EA00E11F34 /* TBXML.h */,
+				8DE94E5414DEC3EA00E11F34 /* TBXML+Compression.h */,
+				8DE94E5514DEC3EA00E11F34 /* TBXML+HTTP.h */,
+				8DE94E5614DEC3F100E11F34 /* TBXML.m */,
+				8DE94E5714DEC3F100E11F34 /* TBXML+Compression.m */,
+				8DE94E5814DEC3F100E11F34 /* TBXML+HTTP.m */,
+			);
+			name = TBXML;
+			sourceTree = "<group>";
+		};
+		8DE94E5214DEC3DF00E11F34 /* xmlrpc */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D637914DF0CA0000B950D /* Additions */,
+				8DE94E6014DEC40200E11F34 /* XMLRPC.h */,
+				8DE94E6114DEC40200E11F34 /* XMLRPC.pch */,
+				8DE94E6214DEC40200E11F34 /* XMLRPCConnection.h */,
+				8DE94E6314DEC40200E11F34 /* XMLRPCConnection.m */,
+				8DE94E6414DEC40200E11F34 /* XMLRPCConnectionDelegate.h */,
+				8DE94E6514DEC40200E11F34 /* XMLRPCConnectionManager.h */,
+				8DE94E6614DEC40200E11F34 /* XMLRPCConnectionManager.m */,
+				8DE94E6714DEC40200E11F34 /* XMLRPCEncoder.h */,
+				8DE94E6814DEC40200E11F34 /* XMLRPCEncoder.m */,
+				8DE94E6914DEC40200E11F34 /* XMLRPCEventBasedParser.h */,
+				8DE94E6A14DEC40200E11F34 /* XMLRPCEventBasedParser.m */,
+				8DE94E6B14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.h */,
+				8DE94E6C14DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m */,
+				8DE94E6D14DEC40200E11F34 /* XMLRPCRequest.h */,
+				8DE94E6E14DEC40200E11F34 /* XMLRPCRequest.m */,
+				8DE94E6F14DEC40200E11F34 /* XMLRPCResponse.h */,
+				8DE94E7014DEC40200E11F34 /* XMLRPCResponse.m */,
+			);
+			name = xmlrpc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DE94E1014DEC35000E11F34 /* irTorrent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DE94E4714DEC35000E11F34 /* Build configuration list for PBXNativeTarget "irTorrent" */;
+			buildPhases = (
+				8DE94E0D14DEC35000E11F34 /* Sources */,
+				8DE94E0E14DEC35000E11F34 /* Frameworks */,
+				8DE94E0F14DEC35000E11F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = irTorrent;
+			productName = irTorrent;
+			productReference = 8DE94E1114DEC35000E11F34 /* irTorrent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DE94E3414DEC35000E11F34 /* irTorrentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DE94E4A14DEC35000E11F34 /* Build configuration list for PBXNativeTarget "irTorrentTests" */;
+			buildPhases = (
+				8DE94E3014DEC35000E11F34 /* Sources */,
+				8DE94E3114DEC35000E11F34 /* Frameworks */,
+				8DE94E3214DEC35000E11F34 /* Resources */,
+				8DE94E3314DEC35000E11F34 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DE94E3B14DEC35000E11F34 /* PBXTargetDependency */,
+			);
+			name = irTorrentTests;
+			productName = irTorrentTests;
+			productReference = 8DE94E3514DEC35000E11F34 /* irTorrentTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DE94E0814DEC35000E11F34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = crsantos.info;
+			};
+			buildConfigurationList = 8DE94E0B14DEC35000E11F34 /* Build configuration list for PBXProject "irTorrent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8DE94E0614DEC35000E11F34;
+			productRefGroup = 8DE94E1214DEC35000E11F34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DE94E1014DEC35000E11F34 /* irTorrent */,
+				8DE94E3414DEC35000E11F34 /* irTorrentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DE94E0F14DEC35000E11F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE94E2014DEC35000E11F34 /* InfoPlist.strings in Resources */,
+				8DE94E2914DEC35000E11F34 /* MainStoryboard_iPhone.storyboard in Resources */,
+				8DE94E2C14DEC35000E11F34 /* MainStoryboard_iPad.storyboard in Resources */,
+				8D3D636514DF033A000B950D /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE94E3214DEC35000E11F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE94E4114DEC35000E11F34 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DE94E3314DEC35000E11F34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DE94E0D14DEC35000E11F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE94E2214DEC35000E11F34 /* main.m in Sources */,
+				8DE94E2614DEC35000E11F34 /* AppDelegate.m in Sources */,
+				8DE94E2F14DEC35000E11F34 /* ViewController.m in Sources */,
+				8DE94E5914DEC3F100E11F34 /* TBXML.m in Sources */,
+				8DE94E5A14DEC3F100E11F34 /* TBXML+Compression.m in Sources */,
+				8DE94E5B14DEC3F100E11F34 /* TBXML+HTTP.m in Sources */,
+				8DE94E7114DEC40200E11F34 /* NSDataAdditions.m in Sources */,
+				8DE94E7214DEC40200E11F34 /* NSStringAdditions.m in Sources */,
+				8DE94E7314DEC40200E11F34 /* XMLRPCConnection.m in Sources */,
+				8DE94E7414DEC40200E11F34 /* XMLRPCConnectionManager.m in Sources */,
+				8DE94E7514DEC40200E11F34 /* XMLRPCEncoder.m in Sources */,
+				8DE94E7614DEC40200E11F34 /* XMLRPCEventBasedParser.m in Sources */,
+				8DE94E7714DEC40200E11F34 /* XMLRPCEventBasedParserDelegate.m in Sources */,
+				8DE94E7814DEC40200E11F34 /* XMLRPCRequest.m in Sources */,
+				8DE94E7914DEC40200E11F34 /* XMLRPCResponse.m in Sources */,
+				8DE94E8414DEC48A00E11F34 /* RTorrent.m in Sources */,
+				8DE94E8514DEC48A00E11F34 /* Torrent.m in Sources */,
+				8DE94E8614DEC48A00E11F34 /* Tracker.m in Sources */,
+				8DE94E8714DEC48A00E11F34 /* User.m in Sources */,
+				8D3D636614DF033A000B950D /* SVProgressHUD.m in Sources */,
+				8D3D639314DF0EC5000B950D /* AFHTTPRequestOperation.m in Sources */,
+				8D3D639414DF0EC5000B950D /* AFImageRequestOperation.m in Sources */,
+				8D3D639514DF0EC5000B950D /* AFJSONRequestOperation.m in Sources */,
+				8D3D639614DF0EC5000B950D /* AFJSONUtilities.m in Sources */,
+				8D3D639714DF0EC5000B950D /* AFNetworkActivityIndicatorManager.m in Sources */,
+				8D3D639814DF0EC5000B950D /* AFPropertyListRequestOperation.m in Sources */,
+				8D3D639914DF0EC5000B950D /* AFURLConnectionOperation.m in Sources */,
+				8D3D639A14DF0EC5000B950D /* AFXMLRequestOperation.m in Sources */,
+				8D3D639B14DF0EC5000B950D /* UIImageView+AFNetworking.m in Sources */,
+				8D3D639E14DF1621000B950D /* AFXMLRPCClient.m in Sources */,
+				8D3D63A814DF315F000B950D /* RTorrentAPI.m in Sources */,
+				8D54BA4B1509727600F603C8 /* NSString+ByteFormatted.m in Sources */,
+				8DC7C94A1580193500C95FC9 /* RelativeDateDescriptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE94E3014DEC35000E11F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE94E4414DEC35000E11F34 /* irTorrentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DE94E3B14DEC35000E11F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DE94E1014DEC35000E11F34 /* irTorrent */;
+			targetProxy = 8DE94E3A14DEC35000E11F34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DE94E1E14DEC35000E11F34 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE94E1F14DEC35000E11F34 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8DE94E2714DEC35000E11F34 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE94E2814DEC35000E11F34 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		8DE94E2A14DEC35000E11F34 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE94E2B14DEC35000E11F34 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		8DE94E3F14DEC35000E11F34 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE94E4014DEC35000E11F34 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DE94E4514DEC35000E11F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carlos Ricardo Santos (5ZV7NTDZMT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "05FB6B79-D68E-4D4A-96DB-3770BC5AE415";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DE94E4614DEC35000E11F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carlos Ricardo Santos (5ZV7NTDZMT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "05FB6B79-D68E-4D4A-96DB-3770BC5AE415";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DE94E4814DEC35000E11F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carlos Ricardo Santos (5ZV7NTDZMT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "irTorrent/irTorrent-Prefix.pch";
+				INFOPLIST_FILE = "irTorrent/irTorrent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "05FB6B79-D68E-4D4A-96DB-3770BC5AE415";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8DE94E4914DEC35000E11F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carlos Ricardo Santos (5ZV7NTDZMT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "irTorrent/irTorrent-Prefix.pch";
+				INFOPLIST_FILE = "irTorrent/irTorrent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "05FB6B79-D68E-4D4A-96DB-3770BC5AE415";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8DE94E4B14DEC35000E11F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/irTorrent.app/irTorrent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "irTorrent/irTorrent-Prefix.pch";
+				INFOPLIST_FILE = "irTorrentTests/irTorrentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8DE94E4C14DEC35000E11F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/irTorrent.app/irTorrent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "irTorrent/irTorrent-Prefix.pch";
+				INFOPLIST_FILE = "irTorrentTests/irTorrentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DE94E0B14DEC35000E11F34 /* Build configuration list for PBXProject "irTorrent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE94E4514DEC35000E11F34 /* Debug */,
+				8DE94E4614DEC35000E11F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DE94E4714DEC35000E11F34 /* Build configuration list for PBXNativeTarget "irTorrent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE94E4814DEC35000E11F34 /* Debug */,
+				8DE94E4914DEC35000E11F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DE94E4A14DEC35000E11F34 /* Build configuration list for PBXNativeTarget "irTorrentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE94E4B14DEC35000E11F34 /* Debug */,
+				8DE94E4C14DEC35000E11F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DE94E0814DEC35000E11F34 /* Project object */;
+}
