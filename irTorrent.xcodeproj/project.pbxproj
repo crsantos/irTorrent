@@ -27,6 +27,9 @@
 		8D81EC4C1580DD2800544309 /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D81EC4A1580DD2800544309 /* SVPullToRefresh.m */; };
 		8D81EC4E1580DDA000544309 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D81EC4D1580DDA000544309 /* QuartzCore.framework */; };
 		8D81EC671581443900544309 /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D81EC661581443900544309 /* MTStatusBarOverlay.m */; };
+		8D81EC691581675600544309 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D81EC681581675600544309 /* Icon.png */; };
+		8D81EC6B1581676100544309 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D81EC6A1581676100544309 /* Icon@2x.png */; };
+		8D81EC6D1581677B00544309 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D81EC6C1581677B00544309 /* Icon-72.png */; };
 		8DC7C94A1580193500C95FC9 /* RelativeDateDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */; };
 		8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1514DEC35000E11F34 /* UIKit.framework */; };
 		8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1714DEC35000E11F34 /* Foundation.framework */; };
@@ -110,6 +113,9 @@
 		8D81EC4D1580DDA000544309 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D81EC651581443900544309 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = Vendor/MTStatusBarOverlay/MTStatusBarOverlay.h; sourceTree = "<group>"; };
 		8D81EC661581443900544309 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = Vendor/MTStatusBarOverlay/MTStatusBarOverlay.m; sourceTree = "<group>"; };
+		8D81EC681581675600544309 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8D81EC6A1581676100544309 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		8D81EC6C1581677B00544309 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		8DC7C9471580193500C95FC9 /* RelativeDateDescriptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RelativeDateDescriptor-Prefix.pch"; sourceTree = "<group>"; };
 		8DC7C9481580193500C95FC9 /* RelativeDateDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDescriptor.h; sourceTree = "<group>"; };
 		8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeDateDescriptor.m; sourceTree = "<group>"; };
@@ -276,6 +282,24 @@
 			name = MTStatusBarOverlay;
 			sourceTree = "<group>";
 		};
+		8D81EC6E1581678700544309 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8D81EC6F1581679100544309 /* Icons&Splash */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		8D81EC6F1581679100544309 /* Icons&Splash */ = {
+			isa = PBXGroup;
+			children = (
+				8D81EC6C1581677B00544309 /* Icon-72.png */,
+				8D81EC6A1581676100544309 /* Icon@2x.png */,
+				8D81EC681581675600544309 /* Icon.png */,
+			);
+			name = "Icons&Splash";
+			sourceTree = "<group>";
+		};
 		8DC7C9461580193500C95FC9 /* RelativeDateDescriptor */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +324,7 @@
 		8DE94E0614DEC35000E11F34 = {
 			isa = PBXGroup;
 			children = (
+				8D81EC6E1581678700544309 /* Assets */,
 				8DE94E1B14DEC35000E11F34 /* irTorrent */,
 				8DE94E3C14DEC35000E11F34 /* irTorrentTests */,
 				8DE94E1414DEC35000E11F34 /* Frameworks */,
@@ -541,6 +566,9 @@
 				8DE94E2C14DEC35000E11F34 /* MainStoryboard_iPad.storyboard in Resources */,
 				8D3D636514DF033A000B950D /* SVProgressHUD.bundle in Resources */,
 				8D81EC4B1580DD2800544309 /* SVPullToRefresh.bundle in Resources */,
+				8D81EC691581675600544309 /* Icon.png in Resources */,
+				8D81EC6B1581676100544309 /* Icon@2x.png in Resources */,
+				8D81EC6D1581677B00544309 /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

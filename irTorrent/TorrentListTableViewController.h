@@ -9,10 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "MTStatusBarOverlay.h"
 
-@interface TorrentListTableViewController : UITableViewController <MTStatusBarOverlayDelegate>
+@interface TorrentListTableViewController : UITableViewController <MTStatusBarOverlayDelegate, UIActionSheetDelegate>
 
 @property (nonatomic,retain) NSMutableArray*    torrentList;
 @property (nonatomic,retain) NSTimer*           refreshTimer;
+@property (nonatomic,retain) UIActionSheet*     actionSheet_;
+
+#pragma mark - ActionSheets menus
+
+/**
+    @method Shows a menu inside an UIActionsheet
+    @param the button clicked
+ */
+- (IBAction) showMenu:(UIBarButtonItem*) sender;
 
 #pragma mark - Timer handle
 

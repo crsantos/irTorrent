@@ -50,8 +50,13 @@
 {
     [super viewDidLoad];
     
-    // set refresh button
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(triggeredUpdateOfTorrentInfo:)];
+    self.navigationItem.rightBarButtonItems=
+    
+        [NSArray arrayWithObjects: 
+         [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh 
+                                                       target:self 
+                                                       action:@selector(triggeredUpdateOfTorrentInfo:)]
+         ,nil];
 }
 
 - (void) viewWillAppear:(BOOL)animated{

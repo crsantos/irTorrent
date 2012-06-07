@@ -25,6 +25,10 @@
     // Init torrents list
     self.torrentList = [NSArray array];
     
+    // Set BLACK status bar
+    [[UIApplication sharedApplication] 
+        setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
+    
     // Override point for customization after application launch.
     return YES;
 }

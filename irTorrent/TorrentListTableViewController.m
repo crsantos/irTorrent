@@ -20,6 +20,7 @@
 
 @synthesize torrentList;
 @synthesize refreshTimer;
+@synthesize actionSheet_;
 
 #pragma mark - Inits, Memory handle
 
@@ -51,6 +52,16 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    // Right bar buttons
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects: 
+     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh 
+                                                   target:self 
+                                                   action:@selector(triggeredUpdateOfTorrentList:)],
+     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                   target:self 
+                                                   action:@selector(showMenu:)]
+     ,nil];
         
     // remove loginVC from stack
     NSMutableArray* vcs= [self.navigationController.viewControllers mutableCopy];
@@ -98,6 +109,31 @@
     } else {
         return YES;
     }
+}
+
+#pragma mark - ActionSheets menus
+
+- (IBAction) showMenu:(UIBarButtonItem*) sender{
+    CMLog(@"Clicked")
+    
+    if (actionSheet_) {
+        [actionSheet_ dismissWithClickedButtonIndex:-1 animated:YES];
+        actionSheet_ = nil;
+        return;
+    }
+    
+    self.actionSheet_ = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Menu",nil) delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:
+        NSLocalizedString(@"Logout",nil),NSLocalizedString(@"About",nil), nil ];
+    [actionSheet_ showFromBarButtonItem:sender animated:YES];
+}
+
+- (void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    self.actionSheet_ = nil;
+}
+
+- (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    CMLog(@"%d clicked", buttonIndex);
 }
 
 #pragma mark - Table view data source
@@ -219,7 +255,7 @@
     
     MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
     overlay.animation = MTStatusBarOverlayAnimationFallDown;  // MTStatusBarOverlayAnimationShrink
-    overlay.detailViewMode = MTDetailViewModeDetailText;         // enable automatic history-tracking and show in detail-view
+    overlay.detailViewMode = MTDetailViewModeHistory;         // enable automatic history-tracking and show in detail-view
     overlay.delegate = self;
     overlay.progress = 0.0;
     [overlay postMessage:NSLocalizedString(@"Refreshing Torrents.", nil)];

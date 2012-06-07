@@ -184,13 +184,13 @@ HERE http://192.168.1.71/downloads" id="toe-Rf-kog">
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fns-UL-YLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Ob9-BH-Lmq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Cty-fL-VsJ">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="Cty-fL-VsJ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="79T-hB-CEz"/>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="XMe-nm-C4w"/>
                     </connections>
                 </navigationController>
             </objects>
@@ -210,6 +210,9 @@ HERE http://192.168.1.71/downloads" id="toe-Rf-kog">
         </class>
         <class className="TorrentListTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TorrentListTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showMenu:" candidateClass="UIBarButtonItem"/>
+            </relationships>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
