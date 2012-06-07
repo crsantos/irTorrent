@@ -93,9 +93,9 @@
 {
     [super viewDidLoad];
 #ifdef DEBUG
-    usernameTF.text=@"########";
-    passwordTF.text=@"########";
-    urlTF.text=@"192.168.1.71";
+    usernameTF.text = @"########";
+    passwordTF.text = @"########";
+    urlTF.text = @"192.168.1.71";
 #endif
     
     if ( [User loadUser] ) {

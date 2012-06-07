@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MTStatusBarOverlay.h"
 
-@interface TorrentDetailsViewController : UIViewController
+@interface TorrentDetailsViewController : UIViewController <MTStatusBarOverlayDelegate>
 
 #pragma mark - Properties
 @property (nonatomic,retain) NSArray* torrentDetails;

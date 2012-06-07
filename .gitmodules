@@ -16,3 +16,6 @@
 [submodule "irTorrent/Vendor/SVPullToRefresh"]
 	path = irTorrent/Vendor/SVPullToRefresh
 	url = https://github.com/samvermette/SVPullToRefresh.git
+[submodule "irTorrent/Vendor/MTStatusBarOverlay"]
+	path = irTorrent/Vendor/MTStatusBarOverlay
+	url = https://github.com/myell0w/MTStatusBarOverlay.git

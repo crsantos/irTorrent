@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MTStatusBarOverlay.h"
 
-@interface TorrentListTableViewController : UITableViewController
+@interface TorrentListTableViewController : UITableViewController <MTStatusBarOverlayDelegate>
 
 @property (nonatomic,retain) NSMutableArray*    torrentList;
 @property (nonatomic,retain) NSTimer*           refreshTimer;

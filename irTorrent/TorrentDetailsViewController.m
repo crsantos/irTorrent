@@ -124,15 +124,22 @@
 }
 
 - (void) timedUpdateOfTorrentInfo:(NSTimer*)timer{
-#ifdef DEBUG
-    CMLog(@"Timed update")
-#endif
+    
+    MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
+    overlay.animation = MTStatusBarOverlayAnimationFallDown;  // MTStatusBarOverlayAnimationShrink
+    overlay.detailViewMode = MTDetailViewModeDetailText;         // enable automatic history-tracking and show in detail-view
+    overlay.delegate = self;
+    overlay.progress = 0.0;
+    [overlay postMessage:NSLocalizedString(@"Refreshing Torrent Info.", nil)];
+
     [self refetchTorrent:^(id responseObject){
         
         if (responseObject) {
             
             [self updateDetailsOfTorrentUI];
         }
+        [overlay postImmediateFinishMessage:NSLocalizedString(@"Done", nil) duration:1.5 animated:YES];
+        overlay.progress = 1.0;
     }];
 }
 

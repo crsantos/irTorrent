@@ -13,6 +13,7 @@
 #import "AppDelegate.h"
 #import "SVProgressHUD.h"
 
+
 @implementation TorrentListTableViewController
 
 #pragma mark - Properties
@@ -177,11 +178,8 @@
 
 #pragma mark - UI and data Updates
 
-// TODO: API CALL for updating torrent info - multicall with params
 - (void) refetchTorrents:(void (^)(id responseObject)) success{
-    
-    // api torrentInfo
-    // test main download list
+
     [[RTorrentAPI sharedInstance] mainListMulticall:^(AFHTTPRequestOperation *operation, id responseObject){
         
         ((AppDelegate*)[UIApplication sharedApplication].delegate).torrentList = responseObject;
@@ -218,11 +216,20 @@
 }
 
 - (void) timedUpdateOfTorrentList:(NSTimer*)timer{
-    CMLog(@"Timed Update!")
+    
+    MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
+    overlay.animation = MTStatusBarOverlayAnimationFallDown;  // MTStatusBarOverlayAnimationShrink
+    overlay.detailViewMode = MTDetailViewModeDetailText;         // enable automatic history-tracking and show in detail-view
+    overlay.delegate = self;
+    overlay.progress = 0.0;
+    [overlay postMessage:NSLocalizedString(@"Refreshing Torrents.", nil)];
+    
     [self refetchTorrents:^(id responseObject) {
         if (responseObject) {
             [self updateTorrentListUI];
         }
+        [overlay postImmediateFinishMessage:NSLocalizedString(@"Done", nil) duration:1.5 animated:YES];
+        overlay.progress = 1.0;
     }];
 }
 

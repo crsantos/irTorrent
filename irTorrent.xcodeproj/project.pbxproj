@@ -26,6 +26,7 @@
 		8D81EC4B1580DD2800544309 /* SVPullToRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D81EC481580DD2800544309 /* SVPullToRefresh.bundle */; };
 		8D81EC4C1580DD2800544309 /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D81EC4A1580DD2800544309 /* SVPullToRefresh.m */; };
 		8D81EC4E1580DDA000544309 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D81EC4D1580DDA000544309 /* QuartzCore.framework */; };
+		8D81EC671581443900544309 /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D81EC661581443900544309 /* MTStatusBarOverlay.m */; };
 		8DC7C94A1580193500C95FC9 /* RelativeDateDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */; };
 		8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1514DEC35000E11F34 /* UIKit.framework */; };
 		8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1714DEC35000E11F34 /* Foundation.framework */; };
@@ -107,6 +108,8 @@
 		8D81EC491580DD2800544309 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
 		8D81EC4A1580DD2800544309 /* SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPullToRefresh.m; sourceTree = "<group>"; };
 		8D81EC4D1580DDA000544309 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8D81EC651581443900544309 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = Vendor/MTStatusBarOverlay/MTStatusBarOverlay.h; sourceTree = "<group>"; };
+		8D81EC661581443900544309 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = Vendor/MTStatusBarOverlay/MTStatusBarOverlay.m; sourceTree = "<group>"; };
 		8DC7C9471580193500C95FC9 /* RelativeDateDescriptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RelativeDateDescriptor-Prefix.pch"; sourceTree = "<group>"; };
 		8DC7C9481580193500C95FC9 /* RelativeDateDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDescriptor.h; sourceTree = "<group>"; };
 		8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeDateDescriptor.m; sourceTree = "<group>"; };
@@ -264,6 +267,15 @@
 			path = Vendor/SVPullToRefresh/SVPullToRefresh;
 			sourceTree = "<group>";
 		};
+		8D81EC641581441E00544309 /* MTStatusBarOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				8D81EC651581443900544309 /* MTStatusBarOverlay.h */,
+				8D81EC661581443900544309 /* MTStatusBarOverlay.m */,
+			);
+			name = MTStatusBarOverlay;
+			sourceTree = "<group>";
+		};
 		8DC7C9461580193500C95FC9 /* RelativeDateDescriptor */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +416,7 @@
 		8DE94E5014DEC37500E11F34 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8D81EC641581441E00544309 /* MTStatusBarOverlay */,
 				8D81EC471580DD2800544309 /* SVPullToRefresh */,
 				8DC7C9461580193500C95FC9 /* RelativeDateDescriptor */,
 				8D3D636E14DF09C5000B950D /* AFNetworking */,
@@ -598,6 +611,7 @@
 				8D81EC3B1580AB7100544309 /* TorrentListTableViewController.m in Sources */,
 				8D81EC431580AE1900544309 /* TorrentDetailsViewController.m in Sources */,
 				8D81EC4C1580DD2800544309 /* SVPullToRefresh.m in Sources */,
+				8D81EC671581443900544309 /* MTStatusBarOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
