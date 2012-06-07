@@ -27,7 +27,7 @@
         multiplyFactor++;
     }
     
-    return [NSString stringWithFormat:@"%f %@",convertedValue, [tokens objectAtIndex:multiplyFactor]];
+    return [NSString stringWithFormat:@"%.2f %@",convertedValue, [tokens objectAtIndex:multiplyFactor]];
 }
 
 @end

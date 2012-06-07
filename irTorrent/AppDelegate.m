@@ -10,6 +10,8 @@
 
 @implementation AppDelegate
 
+@synthesize torrentList;
+
 @synthesize window = _window;
 
 - (void)dealloc
@@ -20,6 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Init torrents list
+    self.torrentList = [NSArray array];
+    
     // Override point for customization after application launch.
     return YES;
 }

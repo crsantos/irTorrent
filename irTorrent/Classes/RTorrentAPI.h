@@ -17,6 +17,7 @@
 @property (readwrite, nonatomic, retain) NSString *username;
 @property (readwrite, nonatomic, retain) NSString *password;
 @property (readwrite, nonatomic, retain) AFXMLRPCClient *client;
+@property (readwrite, nonatomic, retain) NSArray* mainParams;
 
 + (id)sharedInstance;
 
@@ -31,4 +32,12 @@
 
 - (void) mainListMulticall: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
                 andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+
+- (void) torrentInfoMulticallWithHash:(NSString*) hash andSuccess: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success
+                           andFailure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+
+- (NSArray*) getMainParams;
+
+- (NSArray * ) getFileParams:(NSString*) hash;
+
 @end

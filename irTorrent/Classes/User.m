@@ -19,7 +19,7 @@ static User *current = nil;
 #pragma mark - Singleton User model loading and persisting
 
 /**
-    Get the shared instance and create it if necessary.
+    @method Get the shared instance and create it if necessary.
     @return the current user
  */
 + (User *)current {
@@ -31,7 +31,7 @@ static User *current = nil;
 }
 
 /**
-    Loads the User model stored on NSUserDefaults
+    @method Loads the User model stored on NSUserDefaults
     @return the user loaded from storage or nil if no user exists
  */
 + (User*) loadUser{
@@ -47,13 +47,25 @@ static User *current = nil;
 }
 
 /**
-    Stores the User model on NSUserDefaults
+    @method Checks whether the User model (not) exists on NSUserDefaults
+    @param whether the model exists
+ */
++ (BOOL) exists{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:kIRTORRENT_DEFAULT_USER] != nil;
+}
+
+/**
+    @method Stores the User model on NSUserDefaults
  */
 + (void) saveUser{
     
     [[NSUserDefaults standardUserDefaults] 
             setObject:[NSKeyedArchiver archivedDataWithRootObject:current] 
                     forKey:kIRTORRENT_DEFAULT_USER];
+}
+
++ (void) resetUser{
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:kIRTORRENT_DEFAULT_USER];
 }
 
 #pragma mark - Initialization of model

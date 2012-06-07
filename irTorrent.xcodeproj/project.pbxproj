@@ -21,6 +21,11 @@
 		8D3D639E14DF1621000B950D /* AFXMLRPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D639D14DF1621000B950D /* AFXMLRPCClient.m */; };
 		8D3D63A814DF315F000B950D /* RTorrentAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D63A714DF315F000B950D /* RTorrentAPI.m */; };
 		8D54BA4B1509727600F603C8 /* NSString+ByteFormatted.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D54BA4A1509727600F603C8 /* NSString+ByteFormatted.m */; };
+		8D81EC3B1580AB7100544309 /* TorrentListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D81EC3A1580AB7100544309 /* TorrentListTableViewController.m */; };
+		8D81EC431580AE1900544309 /* TorrentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D81EC421580AE1900544309 /* TorrentDetailsViewController.m */; };
+		8D81EC4B1580DD2800544309 /* SVPullToRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D81EC481580DD2800544309 /* SVPullToRefresh.bundle */; };
+		8D81EC4C1580DD2800544309 /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D81EC4A1580DD2800544309 /* SVPullToRefresh.m */; };
+		8D81EC4E1580DDA000544309 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D81EC4D1580DDA000544309 /* QuartzCore.framework */; };
 		8DC7C94A1580193500C95FC9 /* RelativeDateDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */; };
 		8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1514DEC35000E11F34 /* UIKit.framework */; };
 		8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1714DEC35000E11F34 /* Foundation.framework */; };
@@ -94,6 +99,14 @@
 		8D3D63A714DF315F000B950D /* RTorrentAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTorrentAPI.m; path = Classes/RTorrentAPI.m; sourceTree = "<group>"; };
 		8D54BA491509727600F603C8 /* NSString+ByteFormatted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ByteFormatted.h"; path = "Classes/NSString+ByteFormatted.h"; sourceTree = "<group>"; };
 		8D54BA4A1509727600F603C8 /* NSString+ByteFormatted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ByteFormatted.m"; path = "Classes/NSString+ByteFormatted.m"; sourceTree = "<group>"; };
+		8D81EC391580AB7100544309 /* TorrentListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentListTableViewController.h; sourceTree = "<group>"; };
+		8D81EC3A1580AB7100544309 /* TorrentListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentListTableViewController.m; sourceTree = "<group>"; };
+		8D81EC411580AE1900544309 /* TorrentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentDetailsViewController.h; sourceTree = "<group>"; };
+		8D81EC421580AE1900544309 /* TorrentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentDetailsViewController.m; sourceTree = "<group>"; };
+		8D81EC481580DD2800544309 /* SVPullToRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVPullToRefresh.bundle; sourceTree = "<group>"; };
+		8D81EC491580DD2800544309 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		8D81EC4A1580DD2800544309 /* SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPullToRefresh.m; sourceTree = "<group>"; };
+		8D81EC4D1580DDA000544309 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8DC7C9471580193500C95FC9 /* RelativeDateDescriptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RelativeDateDescriptor-Prefix.pch"; sourceTree = "<group>"; };
 		8DC7C9481580193500C95FC9 /* RelativeDateDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDescriptor.h; sourceTree = "<group>"; };
 		8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeDateDescriptor.m; sourceTree = "<group>"; };
@@ -165,6 +178,7 @@
 				8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */,
 				8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */,
 				8DE94E1A14DEC35000E11F34 /* CoreGraphics.framework in Frameworks */,
+				8D81EC4E1580DDA000544309 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +253,17 @@
 			name = Additions;
 			sourceTree = "<group>";
 		};
+		8D81EC471580DD2800544309 /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				8D81EC481580DD2800544309 /* SVPullToRefresh.bundle */,
+				8D81EC491580DD2800544309 /* SVPullToRefresh.h */,
+				8D81EC4A1580DD2800544309 /* SVPullToRefresh.m */,
+			);
+			name = SVPullToRefresh;
+			path = Vendor/SVPullToRefresh/SVPullToRefresh;
+			sourceTree = "<group>";
+		};
 		8DC7C9461580193500C95FC9 /* RelativeDateDescriptor */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +307,7 @@
 		8DE94E1414DEC35000E11F34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D81EC4D1580DDA000544309 /* QuartzCore.framework */,
 				8DE94E7A14DEC44000E11F34 /* libz.dylib */,
 				8DE94E1514DEC35000E11F34 /* UIKit.framework */,
 				8DE94E1714DEC35000E11F34 /* Foundation.framework */,
@@ -342,6 +368,10 @@
 			children = (
 				8DE94E2D14DEC35000E11F34 /* ViewController.h */,
 				8DE94E2E14DEC35000E11F34 /* ViewController.m */,
+				8D81EC391580AB7100544309 /* TorrentListTableViewController.h */,
+				8D81EC3A1580AB7100544309 /* TorrentListTableViewController.m */,
+				8D81EC411580AE1900544309 /* TorrentDetailsViewController.h */,
+				8D81EC421580AE1900544309 /* TorrentDetailsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -374,6 +404,7 @@
 		8DE94E5014DEC37500E11F34 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8D81EC471580DD2800544309 /* SVPullToRefresh */,
 				8DC7C9461580193500C95FC9 /* RelativeDateDescriptor */,
 				8D3D636E14DF09C5000B950D /* AFNetworking */,
 				8D3D636114DF031E000B950D /* SVProgressHUD */,
@@ -496,6 +527,7 @@
 				8DE94E2914DEC35000E11F34 /* MainStoryboard_iPhone.storyboard in Resources */,
 				8DE94E2C14DEC35000E11F34 /* MainStoryboard_iPad.storyboard in Resources */,
 				8D3D636514DF033A000B950D /* SVProgressHUD.bundle in Resources */,
+				8D81EC4B1580DD2800544309 /* SVPullToRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +595,9 @@
 				8D3D63A814DF315F000B950D /* RTorrentAPI.m in Sources */,
 				8D54BA4B1509727600F603C8 /* NSString+ByteFormatted.m in Sources */,
 				8DC7C94A1580193500C95FC9 /* RelativeDateDescriptor.m in Sources */,
+				8D81EC3B1580AB7100544309 /* TorrentListTableViewController.m in Sources */,
+				8D81EC431580AE1900544309 /* TorrentDetailsViewController.m in Sources */,
+				8D81EC4C1580DD2800544309 /* SVPullToRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

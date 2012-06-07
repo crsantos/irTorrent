@@ -16,9 +16,23 @@
 #import "RTorrentAPI.h"
 #import "NSString+ByteFormatted.h"
 
-@interface ViewController : UIViewController //<XMLRPCConnectionDelegate>
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic,retain) IBOutlet UILabel * uploadRateLbl;
 @property (nonatomic,retain) IBOutlet UILabel * downloadRateLbl;
+
+@property (nonatomic,retain) IBOutlet UITextField * usernameTF;
+@property (nonatomic,retain) IBOutlet UITextField * passwordTF;
+@property (nonatomic,retain) IBOutlet UITextField * urlTF;
+
+@property (nonatomic,retain) IBOutlet UIView * loginFieldsView;
+
+@property (nonatomic,readwrite) BOOL allowed;
+
+
+#pragma mark - XMLRPC Calls
+
+- (IBAction) loginUser:(UIButton*) sender;
+- (void) updateTorrentList:(void (^)(BOOL success)) successBlock;
 
 @end

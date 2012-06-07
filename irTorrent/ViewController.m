@@ -7,72 +7,76 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
+#import "SVProgressHUD.h"
 
 
 @implementation ViewController
 
 @synthesize uploadRateLbl;
 @synthesize downloadRateLbl;
+@synthesize usernameTF;
+@synthesize passwordTF;
+@synthesize urlTF;
+@synthesize allowed;
 
-#pragma mark - XMLRPC Tests
+@synthesize loginFieldsView;
 
-- (void) testXMLRPC{
+#pragma mark - 
+
+- (IBAction) loginUser:(UIButton*) sender{
     
+    if (usernameTF.text.length && passwordTF.text.length && urlTF.text.length) {
+    
+        User * user = [User current];
+        user.username = usernameTF.text;
+        user.password = passwordTF.text;
+        user.url = [NSURL URLWithString: [NSString stringWithFormat:@"%@%@%@",HTTP,urlTF.text,RPC_ALIAS] ] ;
+        [User saveUser];
+        
+        loginFieldsView.hidden=YES;
+        
+        [SVProgressHUD showWithStatus:@"Loading"];
+        
+        [self updateTorrentList:^(BOOL success){
+            
+            if (success) {
+                [SVProgressHUD dismiss];
+                [self performSegueWithIdentifier:@"segueEnterTorrentList" sender:nil];
+            }
+            else{
+                [User resetUser];
+                loginFieldsView.hidden=NO;
+                [SVProgressHUD dismissWithError:@"Could not login"];
+            }
+            
+        }];
+    }
+    else{
+        [SVProgressHUD show];
+        [SVProgressHUD dismissWithError:@"Must fill info"];
+    }
+}
+
+#pragma mark - XMLRPC Calls
+
+- (void) updateTorrentList:(void (^)(BOOL success)) successBlock{
+    
+    [SVProgressHUD showWithStatus:NSLocalizedString(@"Loading",@"Loading")];
     // Call singleton API object
     RTorrentAPI * api = [RTorrentAPI sharedInstance];
     
-    // test download rate
-    [api downloadRate:^(AFHTTPRequestOperation *operation, id responseObject) {
-
-#ifdef DEBUG          
-        CMLog(@"Download rate: %@", responseObject);
-#endif
-        downloadRateLbl.text = [NSString stringWithFormat:@"Download rate:\t%@",responseObject];
-    }
-           andFailure:^(AFHTTPRequestOperation *operation, NSError *error) {
-#ifdef DEBUG
-               CMLog(@"FAILED REQUEST! %@",error);
-#endif   
-           }
-     ];
-    
-    // test upload rate
-    [api uploadRate:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-#ifdef DEBUG          
-        CMLog(@"Upload rate: %@", responseObject);
-#endif
-        uploadRateLbl.text = [NSString stringWithFormat:@"Upload rate:\t%@",responseObject];
-        
-    }
-           andFailure:^(AFHTTPRequestOperation *operation, NSError *error) {
-#ifdef DEBUG
-               CMLog(@"FAILED REQUEST! %@",error);
-#endif   
-           }
-     ];
-    
     // test main download list
     [api mainListMulticall:^(AFHTTPRequestOperation *operation, id responseObject){
-                       
-                       //CMLog(@"\n\nFULL LIST [%d]: %@", [responseObject count], responseObject );
-                       
-                       for (NSArray* torrent in responseObject) {
-                            CMLog(@"%@: %@ [%@|%@] Peers: %@/%@ (%@)", 
-                                  [torrent objectAtIndex:kHash],
-                                  [torrent objectAtIndex:kName],
-                                  [torrent objectAtIndex:kUpRate],
-                                  [torrent objectAtIndex:kDownRate],
-                                  [torrent objectAtIndex:kPeersConnected],
-                                  [torrent objectAtIndex:kPeersAccounted],
-                                  [NSDate dateWithTimeIntervalSince1970:[[torrent objectAtIndex:kCreationDate] intValue]]
-                                  )
-                       }
-                   }
-     
-                   andFailure:^(AFHTTPRequestOperation *operation, NSError *error){
-                       CMLog(@"Estudasses..");
-                   }];   
+        ((AppDelegate*)[UIApplication sharedApplication].delegate).torrentList = responseObject;
+        successBlock(YES);
+        
+    }
+                andFailure:^(AFHTTPRequestOperation *operation, NSError *error){
+                    successBlock(NO);
+                    
+                    CMLog(@"ERROR: %@", [error localizedDescription])
+                }];   
 }
 
 
@@ -88,7 +92,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+#ifdef DEBUG
+    usernameTF.text=@"########";
+    passwordTF.text=@"########";
+    urlTF.text=@"192.168.1.71";
+#endif
     
     if ( [User loadUser] ) {
         
@@ -96,20 +104,13 @@
 #ifdef DEBUG
         CMLog(@"User found on storage");
 #endif
+        loginFieldsView.hidden=YES;
+        self.allowed=YES;
     }
     else{
-#ifdef DEBUG
-        CMLog(@"INIT user - just for test purposes");
-#endif
-        User * user = [User current];
-        user.username = @"#########";
-        user.password = @"#########";
-        user.url = [NSURL URLWithString: [NSString stringWithFormat:@"%@%@%@",HTTP,@"192.168.1.71",RPC_ALIAS] ] ;
-        
-        [User saveUser];
+        loginFieldsView.hidden=NO;
+        self.allowed=NO;
     }
-    
-    [self testXMLRPC];
 }
 
 - (void)viewDidUnload
@@ -127,6 +128,22 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    if (allowed) {
+        
+        [SVProgressHUD showWithStatus:@"Loading"];
+        
+        [self updateTorrentList:^(BOOL success) {         
+            if (success) {
+                [SVProgressHUD dismissWithSuccess:@"Updated"];
+                [self performSegueWithIdentifier:@"segueEnterTorrentList" sender:nil];
+            }
+            else{
+                [SVProgressHUD dismissWithError:@"Ups..." afterDelay:1];
+                loginFieldsView.hidden=NO;
+            }
+        }];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -147,6 +164,37 @@
     } else {
         return YES;
     }
+}
+
+#pragma mark - SEGUE handle
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.destinationViewController respondsToSelector:@selector(setTorrentList:)]) {
+        NSArray* torrentList = ((AppDelegate*)[UIApplication sharedApplication].delegate).torrentList;
+        [segue.destinationViewController performSelector:@selector(setTorrentList:) withObject:torrentList];
+    }
+}
+
+#pragma mark - UITextField delegate
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    CMLog(@"LOL- %@", textField)
+    if ( usernameTF == textField ) {
+        [usernameTF resignFirstResponder];
+        [passwordTF becomeFirstResponder];
+    }
+    else if( passwordTF == textField ){
+        [passwordTF resignFirstResponder];
+        [urlTF becomeFirstResponder];
+    }
+    else if( urlTF == textField )
+    {
+        [urlTF resignFirstResponder];
+        [self loginUser:nil];
+    }
+    return NO;
 }
 
 @end

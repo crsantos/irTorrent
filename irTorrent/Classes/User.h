@@ -22,6 +22,10 @@
 
 + (User*) loadUser;
 
++ (BOOL) exists;
+
 + (void) saveUser;
+
++ (void) resetUser;
 
 @end

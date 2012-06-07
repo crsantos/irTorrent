@@ -13,3 +13,6 @@
 [submodule "irTorrent/Vendor/RelativeDateDescriptor"]
 	path = irTorrent/Vendor/RelativeDateDescriptor
 	url = https://github.com/MattMcComb/RelativeDateDescriptor.git
+[submodule "irTorrent/Vendor/SVPullToRefresh"]
+	path = irTorrent/Vendor/SVPullToRefresh
+	url = https://github.com/samvermette/SVPullToRefresh.git
