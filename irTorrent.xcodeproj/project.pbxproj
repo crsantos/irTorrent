@@ -535,7 +535,7 @@
 		8DE94E0814DEC35000E11F34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = crsantos.info;
 			};
 			buildConfigurationList = 8DE94E0B14DEC35000E11F34 /* Build configuration list for PBXProject "irTorrent" */;
