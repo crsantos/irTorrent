@@ -13,7 +13,7 @@
 #import "AppDelegate.h"
 #import "SVProgressHUD.h"
 #import "AboutViewController.h"
-
+#import "SVProgressHUD.h"
 
 @implementation TorrentListTableViewController
 
@@ -137,10 +137,10 @@
     CMLog(@"%d clicked", buttonIndex);
     switch (buttonIndex) {
         case 0:
-            [self performSegueWithIdentifier:@"segueAbout" sender:nil];
+            [SVProgressHUD showSuccessWithStatus:@"NOT_IMPLEMENTED YET"]; 
             break;
-        case 2:
-            
+        case 1:
+            [self performSegueWithIdentifier:@"segueAbout" sender:nil];
             break;
             
         default:
