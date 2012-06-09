@@ -31,6 +31,7 @@
 		8D81EC6B1581676100544309 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D81EC6A1581676100544309 /* Icon@2x.png */; };
 		8D81EC6D1581677B00544309 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D81EC6C1581677B00544309 /* Icon-72.png */; };
 		8DC7C94A1580193500C95FC9 /* RelativeDateDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */; };
+		8DD617191582D20800D794EE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD617181582D20800D794EE /* AboutViewController.m */; };
 		8DE94E1614DEC35000E11F34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1514DEC35000E11F34 /* UIKit.framework */; };
 		8DE94E1814DEC35000E11F34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1714DEC35000E11F34 /* Foundation.framework */; };
 		8DE94E1A14DEC35000E11F34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE94E1914DEC35000E11F34 /* CoreGraphics.framework */; };
@@ -119,6 +120,8 @@
 		8DC7C9471580193500C95FC9 /* RelativeDateDescriptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RelativeDateDescriptor-Prefix.pch"; sourceTree = "<group>"; };
 		8DC7C9481580193500C95FC9 /* RelativeDateDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateDescriptor.h; sourceTree = "<group>"; };
 		8DC7C9491580193500C95FC9 /* RelativeDateDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeDateDescriptor.m; sourceTree = "<group>"; };
+		8DD617171582D20800D794EE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		8DD617181582D20800D794EE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		8DE1021A15095CAD00BCFE36 /* SystemMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemMacros.h; path = Classes/SystemMacros.h; sourceTree = "<group>"; };
 		8DE94E1114DEC35000E11F34 /* irTorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = irTorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE94E1514DEC35000E11F34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -409,6 +412,8 @@
 				8D81EC3A1580AB7100544309 /* TorrentListTableViewController.m */,
 				8D81EC411580AE1900544309 /* TorrentDetailsViewController.h */,
 				8D81EC421580AE1900544309 /* TorrentDetailsViewController.m */,
+				8DD617171582D20800D794EE /* AboutViewController.h */,
+				8DD617181582D20800D794EE /* AboutViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -640,6 +645,7 @@
 				8D81EC431580AE1900544309 /* TorrentDetailsViewController.m in Sources */,
 				8D81EC4C1580DD2800544309 /* SVPullToRefresh.m in Sources */,
 				8D81EC671581443900544309 /* MTStatusBarOverlay.m in Sources */,
+				8DD617191582D20800D794EE /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

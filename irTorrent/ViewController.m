@@ -36,7 +36,7 @@
         
         loginFieldsView.hidden=YES;
         
-        [SVProgressHUD showWithStatus:@"Loading"];
+        [SVProgressHUD showWithStatus:@"Loading" maskType:SVProgressHUDMaskTypeGradient];
         
         [self updateTorrentList:^(BOOL success){
             

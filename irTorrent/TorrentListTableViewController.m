@@ -12,6 +12,7 @@
 #import "RTorrentAPI.h"
 #import "AppDelegate.h"
 #import "SVProgressHUD.h"
+#import "AboutViewController.h"
 
 
 @implementation TorrentListTableViewController
@@ -134,6 +135,17 @@
 - (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     
     CMLog(@"%d clicked", buttonIndex);
+    switch (buttonIndex) {
+        case 0:
+            [self performSegueWithIdentifier:@"segueAbout" sender:nil];
+            break;
+        case 2:
+            
+            break;
+            
+        default:
+            break;
+    }
 }
 
 #pragma mark - Table view data source

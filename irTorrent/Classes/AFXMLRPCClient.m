@@ -254,8 +254,8 @@ static NSUInteger const kAFXMLRPCClientDefaultMaxConcurrentOperationCount = 4;
            success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
            failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
     
-    NSURLRequest *request = [self requestWithMethod:method parameters:parameters];
-    
+    NSMutableURLRequest *request = [self requestWithMethod:method parameters:parameters];
+    request.timeoutInterval=5;
     AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:success failure:failure];
     
     [operation setAuthenticationChallengeBlock:^(NSURLConnection *connection, NSURLAuthenticationChallenge *challenge) {
@@ -263,6 +263,7 @@ static NSUInteger const kAFXMLRPCClientDefaultMaxConcurrentOperationCount = 4;
         User * user = [User current]; // current user
         
         NSURLCredential *credential = [NSURLCredential credentialWithUser:user.username password:user.password persistence:NSURLCredentialPersistencePermanent];
+        [[NSURLCredentialStorage sharedCredentialStorage] removeCredential:credential forProtectionSpace:[challenge protectionSpace]];
         [[NSURLCredentialStorage sharedCredentialStorage] setDefaultCredential:credential forProtectionSpace:[challenge protectionSpace]];
         [[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];
         
