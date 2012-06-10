@@ -16,7 +16,7 @@
 
 @property (nonatomic,retain) NSString * username;
 @property (nonatomic,retain) NSString * password;
-@property (nonatomic,retain) NSURL * url;
+@property (nonatomic,retain) NSString * url;
 
 + (id)current;
 

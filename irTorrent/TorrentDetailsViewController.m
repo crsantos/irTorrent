@@ -12,6 +12,11 @@
 #import "SystemMacros.h"
 #import "RTorrentAPI.h"
 #import "NSString+ByteFormatted.h"
+#import "AppDelegate.h"
+
+@interface TorrentDetailsViewController ()
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
+@end
 
 @implementation TorrentDetailsViewController
 
@@ -24,6 +29,14 @@
 @synthesize peersLbl;
 @synthesize torrentUrlTV;
 @synthesize refreshTimer;
+@synthesize masterPopoverController = _masterPopoverController;
+@synthesize detailsView;
+
+- (void) setTorrentDetails:(NSArray *)__torrentDetails{
+    
+    torrentDetails = __torrentDetails;
+    [self updateDetailsOfTorrentUI];
+}
 
 #pragma mark - Inits, Memory handle
 
@@ -50,26 +63,32 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItems=
-    
-        [NSArray arrayWithObjects: 
-         [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh 
-                                                       target:self 
-                                                       action:@selector(triggeredUpdateOfTorrentInfo:)]
-         ,nil];
+    if( ! ((AppDelegate*)[UIApplication sharedApplication].delegate).isiPad )
+        self.navigationItem.rightBarButtonItems=
+        
+            [NSArray arrayWithObjects: 
+             [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh 
+                                                           target:self 
+                                                           action:@selector(triggeredUpdateOfTorrentInfo:)]
+             ,nil];
 }
 
 - (void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
     [self updateDetailsOfTorrentUI];
-    [self startTimer];
+
+    if( ! ((AppDelegate*)[UIApplication sharedApplication].delegate).isiPad )
+        [self startTimer];
+    
+    detailsView.hidden =  torrentDetails == nil ;
 }
 
 - (void) viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
 
-    [self stopTimer];
+    if( ! ((AppDelegate*)[UIApplication sharedApplication].delegate).isiPad )
+        [self stopTimer];
 }
 
 - (void)viewDidUnload
@@ -79,6 +98,7 @@
     // e.g. self.myOutlet = nil;
     
     self.torrentDetails = nil;
+    self.masterPopoverController = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -183,7 +203,23 @@
     else{
         self.torrentProgressPV.progress = 0;
     }
-    
+    detailsView.hidden =  torrentDetails == nil ;
+}
+
+#pragma mark - Split view
+
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
+{
+    barButtonItem.title = NSLocalizedString(@"Torrents", @"Master");
+    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+    self.masterPopoverController = popoverController;
+}
+
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    // Called when the view is shown again in the split view, invalidating the button and popover controller.
+    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+    self.masterPopoverController = nil;
 }
 
 @end

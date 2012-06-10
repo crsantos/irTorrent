@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MTStatusBarOverlay.h"
 
-@interface TorrentDetailsViewController : UIViewController <MTStatusBarOverlayDelegate>
+@interface TorrentDetailsViewController : UIViewController <MTStatusBarOverlayDelegate, UISplitViewControllerDelegate>
+
 
 #pragma mark - Properties
 @property (nonatomic,retain) NSArray* torrentDetails;
@@ -20,6 +21,7 @@
 @property (nonatomic,retain) IBOutlet UILabel*           peersLbl;
 @property (nonatomic,retain) IBOutlet UITextView*        torrentUrlTV;
 @property (nonatomic,retain) NSTimer*                    refreshTimer;
+@property (nonatomic,retain) IBOutlet UIView*            detailsView;
 
 #pragma mark - Timer handle
 

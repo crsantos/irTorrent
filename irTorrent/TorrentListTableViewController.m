@@ -14,6 +14,7 @@
 #import "SVProgressHUD.h"
 #import "AboutViewController.h"
 #import "SVProgressHUD.h"
+#import "TorrentDetailsViewController.h"
 
 @implementation TorrentListTableViewController
 
@@ -22,8 +23,20 @@
 @synthesize torrentList;
 @synthesize refreshTimer;
 @synthesize actionSheet_;
+@synthesize allowed;
+@synthesize detailViewController;
+@synthesize selectedIndexPath;
 
 #pragma mark - Inits, Memory handle
+
+- (void)awakeFromNib
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        
+        self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+    }
+    [super awakeFromNib];
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -47,10 +60,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+ 
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
- 
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
@@ -63,12 +76,8 @@
                                                    target:self 
                                                    action:@selector(showMenu:)]
      ,nil];
-        
-    // remove loginVC from stack
-    NSMutableArray* vcs= [self.navigationController.viewControllers mutableCopy];
-    [vcs removeObjectAtIndex:0];
-    [self.navigationController setViewControllers:vcs];
     
+    self.detailViewController = (TorrentDetailsViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     // setup the pull-to-refresh view
     [self.tableView addPullToRefreshWithActionHandler:^{
@@ -80,7 +89,34 @@
             [self startTimer];
         }];
         
-    }];        
+    }];
+    
+    [User loadUser];
+    
+    self.selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    
+    if ([User exists] && !((AppDelegate*)[UIApplication sharedApplication].delegate).isiPad) {
+        
+        [self timedUpdateOfTorrentList:nil];
+    }
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    
+    if ( ! [User exists] ) {
+        
+        [self performSegueWithIdentifier:@"LoginVC" sender:nil];
+    }
+    else {
+     
+        if (((AppDelegate*)[UIApplication sharedApplication].delegate).isiPad) {
+            
+            [self.tableView selectRowAtIndexPath:selectedIndexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+        }
+        [self timedUpdateOfTorrentList:nil];
+    }
 }
 
 - (void)viewDidUnload
@@ -134,10 +170,9 @@
 
 - (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     
-    CMLog(@"%d clicked", buttonIndex);
     switch (buttonIndex) {
         case 0:
-            [SVProgressHUD showSuccessWithStatus:@"NOT_IMPLEMENTED YET"]; 
+            [self logout:nil];
             break;
         case 1:
             [self performSegueWithIdentifier:@"segueAbout" sender:nil];
@@ -173,7 +208,6 @@
     cell.textLabel.text         = [[torrentList objectAtIndex:indexPath.row] objectAtIndex:kName];
     cell.detailTextLabel.text   = [[torrentList objectAtIndex:indexPath.row] objectAtIndex:kHash]; 
     
-    
     return cell;
 }
 
@@ -192,6 +226,15 @@
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        NSArray * object = [torrentList objectAtIndex:indexPath.row];
+        self.detailViewController.torrentDetails = object;
+        self.selectedIndexPath = indexPath;
+    }
 }
 
 #pragma mark - SEGUE handle
@@ -263,6 +306,12 @@
     }];
 }
 
+- (IBAction)logout:(id)sender{
+    
+    [User resetUser];
+    [self performSegueWithIdentifier:@"LoginVC" sender:nil];
+}
+
 - (void) timedUpdateOfTorrentList:(NSTimer*)timer{
     
     MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
@@ -274,11 +323,18 @@
     
     [self refetchTorrents:^(id responseObject) {
         if (responseObject) {
+            
             [self updateTorrentListUI];
+            if (((AppDelegate*)[UIApplication sharedApplication].delegate).isiPad) {
+                self.detailViewController.torrentDetails = [responseObject objectAtIndex:selectedIndexPath.row];
+                [self.tableView selectRowAtIndexPath:selectedIndexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+            }
         }
         [overlay postImmediateFinishMessage:NSLocalizedString(@"Done", nil) duration:1.5 animated:YES];
         overlay.progress = 1.0;
     }];
+    
+    
 }
 
 @end

@@ -62,10 +62,12 @@ static User *current = nil;
     [[NSUserDefaults standardUserDefaults] 
             setObject:[NSKeyedArchiver archivedDataWithRootObject:current] 
                     forKey:kIRTORRENT_DEFAULT_USER];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (void) resetUser{
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:kIRTORRENT_DEFAULT_USER];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark - Initialization of model

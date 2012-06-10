@@ -41,7 +41,7 @@ static RTorrentAPI *sharedInstance = nil;
         User * user = [User current];
         
         // and his config URL for rtorrent
-        self.xmlrpc = user.url;
+        self.xmlrpc = [NSURL URLWithString: [NSString stringWithFormat:@"%@%@%@",HTTP,user.url,RPC_ALIAS] ];
         self.client = [AFXMLRPCClient clientWithXMLRPCEndpoint: xmlrpc];
         
         // build a "main" parameters array - pass nil instead of hash

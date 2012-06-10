@@ -31,22 +31,20 @@
         User * user = [User current];
         user.username = usernameTF.text;
         user.password = passwordTF.text;
-        user.url = [NSURL URLWithString: [NSString stringWithFormat:@"%@%@%@",HTTP,urlTF.text,RPC_ALIAS] ] ;
-        [User saveUser];
-        
-        loginFieldsView.hidden=YES;
+        user.url = urlTF.text;
         
         [SVProgressHUD showWithStatus:@"Loading" maskType:SVProgressHUDMaskTypeGradient];
         
         [self updateTorrentList:^(BOOL success){
             
             if (success) {
+                
+                [User saveUser];
                 [SVProgressHUD dismiss];
-                [self performSegueWithIdentifier:@"segueEnterTorrentList" sender:nil];
+                [self dismissModalViewControllerAnimated:YES];
             }
             else{
                 [User resetUser];
-                loginFieldsView.hidden=NO;
                 [SVProgressHUD dismissWithError:@"Could not login"];
             }
             
@@ -74,8 +72,6 @@
     }
                 andFailure:^(AFHTTPRequestOperation *operation, NSError *error){
                     successBlock(NO);
-                    
-                    CMLog(@"ERROR: %@", [error localizedDescription])
                 }];   
 }
 
@@ -92,25 +88,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 #ifdef DEBUG
-    usernameTF.text = @"########";
-    passwordTF.text = @"########";
+    usernameTF.text = @"";
+    passwordTF.text = @"";
     urlTF.text = @"192.168.1.71";
 #endif
     
-    if ( [User loadUser] ) {
-        
-        // there's a user on storage
-#ifdef DEBUG
-        CMLog(@"User found on storage");
-#endif
-        loginFieldsView.hidden=YES;
-        self.allowed=YES;
-    }
-    else{
-        loginFieldsView.hidden=NO;
-        self.allowed=NO;
-    }
 }
 
 - (void)viewDidUnload
@@ -180,7 +164,6 @@
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField{
     
-    CMLog(@"LOL- %@", textField)
     if ( usernameTF == textField ) {
         [usernameTF resignFirstResponder];
         [passwordTF becomeFirstResponder];

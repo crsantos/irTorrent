@@ -13,6 +13,7 @@
 @synthesize torrentList;
 
 @synthesize window = _window;
+@synthesize isiPad;
 
 - (void)dealloc
 {
@@ -24,11 +25,19 @@
 {
     // Init torrents list
     self.torrentList = [NSArray array];
+    self.isiPad = ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad);
+
     
     // Set BLACK status bar
     [[UIApplication sharedApplication] 
         setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
     
+    // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        splitViewController.delegate = (id)navigationController.topViewController;
+    }
     // Override point for customization after application launch.
     return YES;
 }

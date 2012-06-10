@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "MTStatusBarOverlay.h"
 
+@class TorrentDetailsViewController;
+
 @interface TorrentListTableViewController : UITableViewController <MTStatusBarOverlayDelegate, UIActionSheetDelegate>
 
 @property (nonatomic,retain) NSMutableArray*    torrentList;
 @property (nonatomic,retain) NSTimer*           refreshTimer;
 @property (nonatomic,retain) UIActionSheet*     actionSheet_;
+@property (nonatomic,readwrite) BOOL allowed;
+@property (strong, nonatomic) TorrentDetailsViewController *detailViewController;
+@property (strong, nonatomic) NSIndexPath* selectedIndexPath;
 
 #pragma mark - ActionSheets menus
 
@@ -50,6 +55,12 @@
     @method The timed method for invoking updates on torrent details
  */
 - (void) timedUpdateOfTorrentList:(NSTimer*)timer;
+
+/**
+    @method Logout method
+    @param sender The clicked btn
+ */
+- (IBAction)logout:(id)sender;
 
 /**
     @method API call to refecth and later update of torrent details 

@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) NSArray* torrentList;
+@property (readwrite, nonatomic) BOOL isiPad;
 
 @end
